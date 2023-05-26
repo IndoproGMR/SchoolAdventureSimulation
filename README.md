@@ -67,7 +67,7 @@ player akan selalu memegang hp untuk berinteraksi dengan dunia
 
 
 
-## konsep (Game Mistery) (optional/bila ada yang tertarik saja)
+## konsep (Game Misteri) (optional/bila ada yang tertarik saja)
 **Masi belum selesai dan diperbaiki**
 player mentriger event ini dengan membolo keas dan bertemu dengan bully 
 
@@ -100,7 +100,12 @@ bila player bisa melihat dan mendekati salah 1 orang yang melihat dari jauh maka
 
 ## Story
 **Masi belum selesai dan diperbaiki**
-pada tgl 30 febuari thn 1970 adalah hari pertama di sekolah 
+pada tgl 30 febuari thn 1990 adalah hari pertama di sekolah 
+
+setelah lulus SD dengan nilai tertinggi (nama player) masuk SMP Express (belum ada nama nya) di kota nya untuk bisa menjadi salah satu siswa/i SMA termudah 
+
+pada SMP ini kita akan belajar selama 30 hari waktu yang cukup sebelum pendaftaran SMA ditutup
+
 
 ## Ref
 Kahoot
@@ -118,10 +123,11 @@ akan di hitung menggunakan fuzzy apakah lvl nya akan di naikan atau akan tetap a
 **Masi belum selesai dan diperbaiki**
 terdiri dari 3 ending + 1 bonus ending dari assebity
 
-## TODO
+## TO DO
+- [ ] membuat file setting json
 - [ ] membuat database API
 - [ ] Asset 2d top down
-- [ ] cari cara mendapatkan pixelart
+- [ ] cari cara mendapatkan pixel art
 - [ ] membuat kepribadian pada AI
 - [ ] musik dan ambient
 - [ ] cari cara supaya bisa melakukan TTS
@@ -131,6 +137,7 @@ terdiri dari 3 ending + 1 bonus ending dari assebity
 - [ ] cari cara supaya bisa menampilkan gambar
 - [ ] cari cara supaya bisa melakukan Online Multiplayer
 - [x] cari cara supaya bisa mengambil data API
+- [x] membuat Server API
 
 
 
@@ -154,7 +161,7 @@ jelaskan
 	- Player dapat Mengubah kepridadian dari guru dengan menggunakan MOD
 	- Player bisa mengubah karakter (gambaran diri sendiri) dari texture pack
 	- Player bisa mengubah audio dari texture pack
-4. Rule:
+4. Rule: kentuan (bila tempak maka akan kena damage)
 	- Player Sebagai Siswa SMP
 	- Player harus bisa mengontrol bagaimana caranya bisa mendapatkan score dengan cepat
 	- Player tidak melawan dengan waktu saja tapi siswa lain nya (AI)
@@ -165,7 +172,9 @@ jelaskan
 	- Siswa Lain nya dapat menjawab pertanyaan
 	- tidak hanya player yang dapat salah tapi AI pun dapat salah
 	- semakin susah LVL maka kemungkinan AI menjawab dengan benar semakin kecil
-6. Roles:
+6. Roles: pengalaman pemain (kalo mau menyerang a maka harus membawa senjata 2 tapi untuk pemain lain bisa saja membawa senjata 1)
+	- pemain bisa memilih level sekolah yang diinginkan
+	- pemain bisa memilih kelas yang ingin di tempuh
 	- Player bermain sebagai siswa smp kelas 1 yang baru masuk sekolah
 	- Player bermain sebagai Rubah anthropomorphic (dapat di ubah dengan mod)
 7. Decisions:
@@ -179,7 +188,41 @@ jelaskan
 ## Tugas 2 50%
 Jelaskan
 1. Scenario:
+	- setelah lulus SD dengan nilai tertinggi (nama player) masuk SMP Express (belum ada nama nya) di kota nya untuk bisa menjadi salah satu siswa/i SMA termudah 
+	- pada SMP ini kita akan belajar selama 30 hari waktu yang cukup sebelum pendaftaran SMA ditutup
 2. Score Model:
-3. Indicator:
-4. Levels:
-5. Symbols:
+	- Cara mendapat kan point dengan cara menjawab dengan benar
+	- pada level 1 papat 1 point level 2 dapat 2 pont dan seterus nya
+3. Levels:
+	- level berdasarkan fungsi fuzzy
+	- dan level dapat turun
+	- akan di cek setiap 5 soal sekali
+4. Indicator: alat ukur yang mempresentasikan yang terukur (kecepatan)
+	- terdapat indikator hp untuk membuka beberapa menu
+	- seperti indikator score
+	- indikator jam pada game
+5. Symbols:  sebuah gambar yang menggambarkan sebuah fungsi (kaya saat naik lif menekan simbol panah naik untuk naik)
+	- pada hp terdapat beberapa simbol seperti simbol map untuk membantu player dimana letak kelas yang ingin di ikuti
+	- pada saat game berjalan pada offline cuaca akan berubah menjadi hujan
+
+
+```
+iterasicek = ++
+JS = jumlah siswa - iterasicek
+JN = jumlah nilai (dari yang tertinggi)
+NR = nilai rendah
+NT = nilai tinggi
+NG = JN/2
+
+rataNilai = JS/JN
+
+// menurunkan lvl
+rataNilai <= NR
+NR <= ((NG-rataNilai)/(NG-NR)) <= NG
+rataNilai >= NG
+
+// naik 1 lvl
+rataNilai <= NG
+NG <= ((rataNilai-NG)/(NT-NG)) <= NT
+rataNilai >= NT
+```
