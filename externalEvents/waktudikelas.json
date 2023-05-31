@@ -1,0 +1,69 @@
+{
+  "associatedLayout": "Kelas",
+  "lastChangeTimeStamp": 0,
+  "name": "WaktudiKelas",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"waktuKelas\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "RepeatEveryXSeconds::Repeat"
+          },
+          "parameters": [
+            "",
+            "\"looptime\"",
+            "1",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "TextWaktu",
+            "=",
+            "\"waktu:\" + ToString(GlobalVariable(setting.Time))"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "setting.Time",
+            "+",
+            "TimerElapsedTime(\"waktuKelas\")"
+          ]
+        }
+      ]
+    }
+  ]
+}

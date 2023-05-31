@@ -1,0 +1,57 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "HP",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "i"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"HP\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "i"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"HP\""
+          ]
+        }
+      ]
+    }
+  ]
+}

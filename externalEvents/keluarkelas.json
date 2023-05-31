@@ -1,0 +1,53 @@
+{
+  "associatedLayout": "Kelas",
+  "lastChangeTimeStamp": 0,
+  "name": "Keluarkelas",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Player",
+            "keluarKelas",
+            "20",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PopScene"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobalTxt"
+          },
+          "parameters": [
+            "Kelas.Pelajaran",
+            "=",
+            "\"\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "setting.Time",
+            "+",
+            "TimerElapsedTime(\"waktuKelas\")"
+          ]
+        }
+      ]
+    }
+  ]
+}

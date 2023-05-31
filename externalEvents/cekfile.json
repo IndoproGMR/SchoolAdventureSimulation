@@ -1,0 +1,52 @@
+{
+  "associatedLayout": "Title Screen",
+  "lastChangeTimeStamp": 0,
+  "name": "cekFile",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "cek file",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "GroupExists"
+          },
+          "parameters": [
+            "\"setting_config\"",
+            "\"setting\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "LireFichierExp"
+          },
+          "parameters": [
+            "\"setting_config\"",
+            "\"setting\"",
+            "",
+            "temp"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ]
+}

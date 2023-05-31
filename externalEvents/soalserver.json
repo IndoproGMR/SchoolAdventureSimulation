@@ -1,0 +1,57 @@
+{
+  "associatedLayout": "Kelas",
+  "lastChangeTimeStamp": 0,
+  "name": "soalserver",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "urltemp",
+            "=",
+            "GlobalVariableString(setting.URL)+\"/randomsoal?lvl=\" + GlobalVariableString(setting.LVL) + \"&mapel=1\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SendAsyncRequest"
+          },
+          "parameters": [
+            "VariableString(urltemp)",
+            "\"\"",
+            "\"GET\"",
+            "",
+            "soaltemp",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "JSONToVariableStructure"
+          },
+          "parameters": [
+            "VariableString(soaltemp)",
+            "soaljson"
+          ]
+        }
+      ]
+    }
+  ]
+}

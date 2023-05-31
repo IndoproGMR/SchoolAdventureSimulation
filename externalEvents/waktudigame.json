@@ -1,0 +1,69 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "WaktudiGame",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"waktuUtama\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "RepeatEveryXSeconds::Repeat"
+          },
+          "parameters": [
+            "",
+            "\"looptime\"",
+            "1",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "TextWaktu",
+            "=",
+            "\"waktu:\" + ToString(GlobalVariable(setting.Time))"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "setting.Time",
+            "+",
+            "TimerElapsedTime(\"waktuUtama\")"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "associatedLayout": "setting",
+  "lastChangeTimeStamp": 0,
+  "name": "pingserver",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SendAsyncRequest"
+          },
+          "parameters": [
+            "GlobalVariableString(setting.URL)",
+            "\"\"",
+            "\"GET\"",
+            "",
+            "jsonping",
+            "jsonping"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "JSONToVariableStructure"
+          },
+          "parameters": [
+            "VariableString(jsonping)",
+            "pingstatus"
+          ]
+        }
+      ]
+    }
+  ]
+}

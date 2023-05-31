@@ -1,0 +1,17 @@
+{
+  "associatedLayout": "setting",
+  "lastChangeTimeStamp": 0,
+  "name": "jsPing",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "var varible = runtimeScene.getVariables();",
+        ""
+      ],
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    }
+  ]
+}

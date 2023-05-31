@@ -1,0 +1,270 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "PlayerMovement",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "collions Hendler",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "3",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "Player.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "collionsHendler"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "keypress",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "\"Up\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Player",
+            "\"Up\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "\"Left\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Player",
+            "\"Left\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "\"Right\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Player",
+            "\"Right\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "\"Down\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "Player",
+            "\"Down\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PauseAnimation"
+          },
+          "parameters": [
+            "Player"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlayAnimation"
+          },
+          "parameters": [
+            "Player"
+          ]
+        }
+      ]
+    }
+  ]
+}
