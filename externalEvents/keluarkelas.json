@@ -21,9 +21,16 @@
       "actions": [
         {
           "type": {
-            "value": "PopScene"
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
           },
           "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "1",
+            "\"Circular\"",
+            "\"Forward\"",
+            "255",
             ""
           ]
         },
@@ -39,12 +46,18 @@
         },
         {
           "type": {
-            "value": "ModVarGlobal"
+            "value": "Wait"
           },
           "parameters": [
-            "setting.Time",
-            "+",
-            "TimerElapsedTime(\"waktuKelas\")"
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PopScene"
+          },
+          "parameters": [
+            ""
           ]
         }
       ]

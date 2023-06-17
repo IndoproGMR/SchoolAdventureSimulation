@@ -1,6 +1,150 @@
 {
-  "associatedLayout": "",
+  "associatedLayout": "Kelas",
   "lastChangeTimeStamp": 0,
   "name": "soal",
-  "events": []
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "JSONToVariableStructure"
+          },
+          "parameters": [
+            "VariableString(soaltemp)",
+            "soaljson"
+          ]
+        },
+        {
+          "type": {
+            "value": "BitmapText::BitmapTextObject::SetText"
+          },
+          "parameters": [
+            "Pertanyaan",
+            "=",
+            "VariableString(soaljson.Pertanyaan_Soal)"
+          ]
+        },
+        {
+          "type": {
+            "value": "VariableClearChildren"
+          },
+          "parameters": [
+            "jawaban"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneVariablePushString"
+              },
+              "parameters": [
+                "jawaban",
+                "VariableString(soaljson.jawaban1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariablePushString"
+              },
+              "parameters": [
+                "jawaban",
+                "VariableString(soaljson.jawaban2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariablePushString"
+              },
+              "parameters": [
+                "jawaban",
+                "VariableString(soaljson.jawaban3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariablePushString"
+              },
+              "parameters": [
+                "jawaban",
+                "VariableString(soaljson.jawaban4)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ArrayTools::Shuffle"
+                  },
+                  "parameters": [
+                    "",
+                    "\"jawaban\"",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BitmapText::BitmapTextObject::SetText"
+                      },
+                      "parameters": [
+                        "Jawaban1",
+                        "=",
+                        "VariableString(jawaban[0])"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BitmapText::BitmapTextObject::SetText"
+                      },
+                      "parameters": [
+                        "Jawaban2",
+                        "=",
+                        "VariableString(jawaban[1])"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BitmapText::BitmapTextObject::SetText"
+                      },
+                      "parameters": [
+                        "Jawaban3",
+                        "=",
+                        "VariableString(jawaban[2])"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BitmapText::BitmapTextObject::SetText"
+                      },
+                      "parameters": [
+                        "Jawaban4",
+                        "=",
+                        "VariableString(jawaban[3])"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -477,6 +477,40 @@
         "name": "New image5",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BoxPertanyaan.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BoxPertanyaan",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Border.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -500,12 +534,6 @@
           "value": ""
         },
         {
-          "folded": true,
-          "name": "Time",
-          "type": "string",
-          "value": ""
-        },
-        {
           "name": "URL",
           "type": "string",
           "value": "http://localhost:8080/api/v1"
@@ -514,16 +542,11 @@
           "name": "accessibility",
           "type": "boolean",
           "value": false
-        },
-        {
-          "folded": true,
-          "name": "status",
-          "type": "boolean",
-          "value": false
         }
       ]
     },
     {
+      "folded": true,
       "name": "Kelas",
       "type": "structure",
       "children": [
@@ -538,14 +561,99 @@
           "name": "Score",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "harike",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "lvl",
+          "type": "number",
+          "value": 1
         }
       ]
     },
     {
       "folded": true,
-      "name": "speech",
-      "type": "string",
-      "value": ""
+      "name": "etc",
+      "type": "structure",
+      "children": [
+        {
+          "name": "OnlineStatus",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "TimeD",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TimeH",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TimeM",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TimeS",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TimeTemp",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "filename",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "speech",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "siswa",
+      "type": "structure",
+      "children": [
+        {
+          "name": "JumlahSiswa",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "NamaSiswa",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Testsiswa1"
+            },
+            {
+              "type": "string",
+              "value": "Testsiswa2"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Version",
+          "type": "number",
+          "value": 0
+        }
+      ]
     }
   ],
   "layouts": [
@@ -564,6 +672,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/kelas"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/savegamescreen"
     }
   ],
   "externalEvents": [
@@ -609,14 +721,6 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/waktudigame"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/waktudikelas"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/keluarkelas"
     },
     {
@@ -630,9 +734,37 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/hujan"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/waktu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/timehendler"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/clock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/masukgame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/savegame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/soalhendler"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"

@@ -9,6 +9,7 @@
       "actions": [
         {
           "type": {
+            "await": true,
             "value": "SendAsyncRequest"
           },
           "parameters": [
@@ -20,19 +21,21 @@
             "jsonping"
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      ],
+      "events": [
         {
-          "type": {
-            "value": "JSONToVariableStructure"
-          },
-          "parameters": [
-            "VariableString(jsonping)",
-            "pingstatus"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "JSONToVariableStructure"
+              },
+              "parameters": [
+                "VariableString(jsonping)",
+                "pingstatus"
+              ]
+            }
           ]
         }
       ]

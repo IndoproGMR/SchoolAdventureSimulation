@@ -1,0 +1,210 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "savegame",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "setting.TimeH",
+                ">=",
+                "18"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "setting.TimeH",
+                "<=",
+                "5"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Save",
+            "yes",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "Save",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "setting.TimeH",
+                        ">=",
+                        "21"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "setting.TimeH",
+                        "<=",
+                        "23"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "resetTime",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "setting.TimeH",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "setting.TimeM",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "setting.TempTime",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "setting.TimeD",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Kelas.harike",
+                    "=",
+                    "GlobalVariable(setting.TimeD)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "setting.TimeD",
+                        "=",
+                        "31"
+                      ]
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"SaveGameScreen\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

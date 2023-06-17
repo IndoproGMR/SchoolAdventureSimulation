@@ -1,0 +1,83 @@
+{
+  "associatedLayout": "Kelas",
+  "lastChangeTimeStamp": 0,
+  "name": "SoalHendler",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialog\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "RepeatEveryXSeconds::Repeat"
+              },
+              "parameters": [
+                "",
+                "\"maxsoal\"",
+                "20",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "soalserver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialog\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "TODO\n- bila tidak ada yang jawab selama min 20 detik tergantung pada lvl max 60 detik maka re run soal\n- bila jawaban benar naikan score\n- bila jawaban salah tunggu hingga ada yang benar atau waktu habis maka re run soal",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ]
+}

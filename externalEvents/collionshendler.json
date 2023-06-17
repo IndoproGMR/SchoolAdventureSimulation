@@ -28,6 +28,19 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Collions List",
+      "comment2": ""
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [

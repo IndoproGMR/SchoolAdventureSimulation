@@ -1,0 +1,157 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "waktu",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "detik ke menit",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "etc.TimeS",
+            ">=",
+            "60"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeS",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeM",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "menit ke jam",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "etc.TimeM",
+            ">=",
+            "60"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeM",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeH",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "jam ke hari",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "etc.TimeH",
+            ">=",
+            "24"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeH",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeD",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

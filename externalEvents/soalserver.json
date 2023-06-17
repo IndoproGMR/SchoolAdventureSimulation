@@ -4,8 +4,33 @@
   "name": "soalserver",
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Mata Pelajaran yang sudah di sediakan",
+      "comment2": ""
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "VarGlobalTxt"
+          },
+          "parameters": [
+            "Kelas.Pelajaran",
+            "=",
+            "\"custom\""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -14,41 +39,143 @@
           "parameters": [
             "urltemp",
             "=",
-            "GlobalVariableString(setting.URL)+\"/randomsoal?lvl=\" + GlobalVariableString(setting.LVL) + \"&mapel=1\""
+            "GlobalVariableString(setting.URL)+\"/randomsoal?mapel=\" + GlobalVariableString(Kelas.Pelajaran) + \"&lvl=\" + GlobalVariableString(Kelas.lvl)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "await": true,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "VariableString(urltemp)",
+                "\"\"",
+                "\"GET\"",
+                "",
+                "soaltemp",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "VariableString(soaltemp)",
+                    "soaljson"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "soal"
+                }
+              ]
+            }
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "SendAsyncRequest"
-          },
-          "parameters": [
-            "VariableString(urltemp)",
-            "\"\"",
-            "\"GET\"",
-            "",
-            "soaltemp",
-            ""
-          ]
-        }
-      ]
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "soal set yang di berikan",
+      "comment2": ""
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobalTxt"
+          },
+          "parameters": [
+            "Kelas.Pelajaran",
+            "=",
+            "\"custom\""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
-            "value": "JSONToVariableStructure"
+            "value": "ModVarSceneTxt"
           },
           "parameters": [
-            "VariableString(soaltemp)",
-            "soaljson"
+            "urltemp",
+            "=",
+            "GlobalVariableString(setting.URL)+\"/soalset?soalset=\" + GlobalVariableString(setting.SoalSet) + \"&lvl=\" + GlobalVariableString(Kelas.lvl)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "await": true,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "VariableString(urltemp)",
+                "\"\"",
+                "\"GET\"",
+                "",
+                "soaltemp",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure"
+                  },
+                  "parameters": [
+                    "VariableString(soaltemp)",
+                    "soaljson"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "soal"
+                }
+              ]
+            }
           ]
         }
       ]

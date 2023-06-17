@@ -1,0 +1,57 @@
+{
+  "associatedLayout": "game",
+  "lastChangeTimeStamp": 0,
+  "name": "timehendler",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Clock"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "waktu"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "TextWaktu",
+            "=",
+            "\"waktu:\" + ToString(GlobalVariable(etc.TimeTemp))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "Jam",
+            "=",
+            "\"Jam \"+ToString(GlobalVariable(etc.TimeH))+\" : \"+ToString(GlobalVariable(etc.TimeM))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "JamHP",
+            "=",
+            "ToString(GlobalVariable(etc.TimeH))+\" : \"+ToString(GlobalVariable(etc.TimeM))"
+          ]
+        }
+      ]
+    }
+  ]
+}

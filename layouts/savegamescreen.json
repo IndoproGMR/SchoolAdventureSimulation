@@ -1,0 +1,310 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "SaveGameScreen",
+  "name": "SaveGameScreen",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.49508400737488867,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Quit",
+      "persistentUuid": "d2297964-5f31-439f-bb9d-07308c37d784",
+      "width": 0,
+      "x": 42,
+      "y": 626,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 69,
+      "layer": "",
+      "name": "countiun",
+      "persistentUuid": "abc34cd0-7605-4bfb-88b3-3ead26259efb",
+      "width": 204,
+      "x": 1036,
+      "y": 613,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "Quit",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Quit",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "countiun",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "contiunye",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "SaveGame",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FileSystem::SaveStringToFileSync"
+              },
+              "parameters": [
+                "GlobalVarToJSON(Kelas)",
+                "GlobalVariableString(etc.filename) + \"save_file.json\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "countiun",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"game\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "Quit",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Quit"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 4,
+      "ambientLightColorG": 134217728,
+      "ambientLightColorR": 1597263169,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}

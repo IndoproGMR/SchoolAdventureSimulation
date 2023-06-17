@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.3925161175488224,
+    "snap": true,
+    "zoomFactor": 0.5653158055126309,
     "windowMask": false
   },
   "objectsGroups": [
@@ -27,7 +27,26 @@
       "objects": []
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Temp",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "Variable",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "TempSiswa",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -53,7 +72,7 @@
       "persistentUuid": "5411b431-b940-4cbb-b288-fbb862c1184f",
       "width": 0,
       "x": 64,
-      "y": 288,
+      "y": 315,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -68,7 +87,7 @@
       "persistentUuid": "942c5cd5-ffb1-465a-b1f1-a199468c75ab",
       "width": 0,
       "x": 64,
-      "y": 384,
+      "y": 416,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -83,8 +102,38 @@
       "persistentUuid": "3314a8c6-11d7-4f2a-aa64-f6c1303fa1a1",
       "width": 0,
       "x": 64,
-      "y": 480,
+      "y": 512,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "continue",
+      "name": "settingContinue",
+      "persistentUuid": "b7ae17d2-346a-4fa0-9e86-1bd9d96b7c5e",
+      "width": 0,
+      "x": 64,
+      "y": 224,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Disablecontinue",
+      "persistentUuid": "b00654ae-9174-4b6d-83e1-f3f20e46c26b",
+      "width": 0,
+      "x": 64,
+      "y": 224,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -101,18 +150,10 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "effects": [
-        {
-          "effectType": "",
-          "name": "Effect",
-          "doubleParameters": {},
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ],
+      "effects": [],
       "behaviors": [],
       "string": "School Adventure Simulation",
-      "font": "",
+      "font": "CantoraOne-Regular.ttf",
       "textAlignment": "center",
       "characterSize": 70,
       "color": {
@@ -312,9 +353,150 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "settingContinue",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "continue",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "Disablecontinue",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "continue",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
     }
   ],
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Start",
+      "comment2": ""
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -333,8 +515,253 @@
           "parameters": []
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobalTxt"
+          },
+          "parameters": [
+            "etc.filename",
+            "=",
+            "FileSystem::DocumentsPath() + FileSystem::PathDelimiter() + \"SchoolAdventureSimulator\"+ FileSystem::PathDelimiter()"
+          ]
+        }
+      ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FileSystem::PathExists"
+              },
+              "parameters": [
+                "GlobalVariableString(etc.filename)"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "tombol continue",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FileSystem::PathExists"
+                      },
+                      "parameters": [
+                        "GlobalVariableString(etc.filename)+\"save_file.json\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                      },
+                      "parameters": [
+                        "Disablecontinue",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"continue\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FileSystem::PathExists"
+                      },
+                      "parameters": [
+                        "GlobalVariableString(etc.filename)+\"save_file.json\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                      },
+                      "parameters": [
+                        "Disablecontinue",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"continue\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "read data siswa",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FileSystem::LoadStringFromFileSync"
+                  },
+                  "parameters": [
+                    "TempSiswa",
+                    "GlobalVariableString(etc.filename)+\"siswa\"+ FileSystem::PathDelimiter() + \"siswa.json\"",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "JSONToGlobalVariableStructure"
+                      },
+                      "parameters": [
+                        "VariableString(TempSiswa)",
+                        "siswa"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FileSystem::PathExists"
+              },
+              "parameters": [
+                "GlobalVariableString(etc.filename)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FileSystem::MakeDirectory"
+              },
+              "parameters": [
+                "GlobalVariableString(etc.filename)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "Disablecontinue",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"continue\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FileSystem::MakeDirectory"
+                  },
+                  "parameters": [
+                    "GlobalVariableString(etc.filename) + \"siswa\"",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FileSystem::SaveStringToFileSync"
+                      },
+                      "parameters": [
+                        "GlobalVarToJSON(siswa)",
+                        "GlobalVariableString(etc.filename)+\"siswa\"+ FileSystem::PathDelimiter() + \"siswa.json\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Link",
           "include": {
@@ -345,19 +772,95 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Repeat",
+      "repeatExpression": "2",
       "conditions": [],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "JSONToVariableStructure"
-          },
-          "parameters": [
-            "VariableString(jsonping)",
-            "pingstatus"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "JSONToVariableStructure"
+              },
+              "parameters": [
+                "VariableString(jsonping)",
+                "pingstatus"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "VariableString(pingstatus.status)",
+                    "!=",
+                    "\"ok\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "etc.OnlineStatus",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "VariableString(pingstatus.status)",
+                    "=",
+                    "\"ok\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "etc.OnlineStatus",
+                    "True"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Tombol",
+      "comment2": ""
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -373,6 +876,56 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeH",
+            "=",
+            "6"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeD",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeM",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeS",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "etc.TimeTemp",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
@@ -440,49 +993,57 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::CompareStrings"
+            "value": "FileSystem::PathExists"
           },
           "parameters": [
-            "VariableString(pingstatus.status)",
-            "=",
-            "\"ok\""
+            "GlobalVariableString(etc.filename) + \"save_file.json\""
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "SetGlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "setting.status",
-            "True"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareStrings"
-          },
-          "parameters": [
-            "VariableString(pingstatus.status)",
-            "!=",
-            "\"ok\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetGlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "setting.status",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "settingContinue",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FileSystem::LoadStringFromFileSync"
+              },
+              "parameters": [
+                "Temp",
+                "GlobalVariableString(etc.filename) + \"save_file.json\"",
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONToGlobalVariableStructure"
+                  },
+                  "parameters": [
+                    "VariableString(Temp)",
+                    "Kelas"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -509,6 +1070,17 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 11234817,
+      "ambientLightColorG": 6069792,
+      "ambientLightColorR": 11230800,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "continue",
+      "visibility": false,
+      "cameras": [],
       "effects": []
     }
   ],

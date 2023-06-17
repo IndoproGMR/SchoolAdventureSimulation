@@ -1,11 +1,20 @@
 {
   "associatedLayout": "game",
   "lastChangeTimeStamp": 0,
-  "name": "Masukkelas",
+  "name": "MasukGame",
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -17,26 +26,9 @@
             "\"0;0;0\"",
             "1",
             "\"Circular\"",
-            "\"Forward\"",
+            "\"Backward\"",
             "255",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "PushScene"
-          },
-          "parameters": [
-            "",
-            "\"Kelas\""
           ]
         }
       ]

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9296875000000093,
+    "zoomFactor": 0.5468750000000066,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -60,8 +60,8 @@
       "name": "Player",
       "persistentUuid": "a25ea508-ba16-464a-ade6-8f3d8fa1c2f1",
       "width": 32,
-      "x": 638,
-      "y": 238,
+      "x": 331,
+      "y": 532,
       "zOrder": 999,
       "numberProperties": [],
       "stringProperties": [],
@@ -498,6 +498,51 @@
       "x": 954,
       "y": 107,
       "zOrder": 1011,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "ui",
+      "name": "Jam",
+      "persistentUuid": "a92b9354-4503-4e67-a2dd-0f41b8423922",
+      "width": 0,
+      "x": 60,
+      "y": 91,
+      "zOrder": 1012,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "HP",
+      "name": "JamHP",
+      "persistentUuid": "1a328cca-f875-44a6-adbc-83feb402a5d3",
+      "width": 0,
+      "x": 1085,
+      "y": 449,
+      "zOrder": 1013,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 50,
+      "layer": "HP",
+      "name": "Save",
+      "persistentUuid": "a6d20178-1b2b-44fd-83af-abf84f5c2329",
+      "width": 85,
+      "x": 1125,
+      "y": 538,
+      "zOrder": 1014,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1056,10 +1101,10 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 9999,
-          "impassable": true,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 9999,
+          "impassable": true
         }
       ]
     },
@@ -1221,6 +1266,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -1231,10 +1278,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 50,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ]
     },
@@ -1249,6 +1294,114 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Jam",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "JamHP",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "Save",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Save",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
     }
   ],
   "events": [
@@ -1270,10 +1423,45 @@
       "conditions": [
         {
           "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "Save",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Kelas.lvl",
+            "=",
+            "GlobalVariable(setting.LVL)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "GlobalVariableAsBoolean"
           },
           "parameters": [
-            "setting.status",
+            "etc.OnlineStatus",
             "False"
           ]
         }
@@ -1294,7 +1482,7 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "WaktudiGame"
+      "target": "timehendler"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -1302,6 +1490,20 @@
         "includeConfig": 0
       },
       "target": "PlayerMovement"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "MasukGame"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "savegame"
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -1387,6 +1589,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1430,6 +1633,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {

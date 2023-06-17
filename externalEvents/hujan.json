@@ -14,26 +14,15 @@
           "parameters": [
             "rain_density",
             "=",
-            "500"
+            "15"
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "RepeatEveryXSeconds::Repeat"
-          },
-          "parameters": [
-            "",
-            "\"\"",
-            "0.0001",
-            ""
-          ]
-        }
-      ],
+      "type": "BuiltinCommonInstructions::Repeat",
+      "repeatExpression": "Variable(rain_density)",
+      "conditions": [],
       "actions": [],
       "events": [
         {
@@ -47,7 +36,7 @@
               "parameters": [
                 "",
                 "hujan",
-                "Random(2500)",
+                "Random(2000)-100",
                 "-100",
                 "\"offlineLayer\""
               ]
@@ -86,11 +75,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ]
 }

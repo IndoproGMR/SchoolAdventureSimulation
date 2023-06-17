@@ -34,6 +34,12 @@
       "name": "pingstatus",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "temp",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -78,21 +84,6 @@
       "x": 224,
       "y": 127,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "filesave",
-      "persistentUuid": "8125debc-bc7a-4d36-af8a-7e38370a3de8",
-      "width": 0,
-      "x": 992,
-      "y": 480,
-      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -645,33 +636,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "filesave",
-            "=",
-            "\"file nya ada\""
-          ]
-        },
-        {
-          "type": {
-            "value": "LireFichierExp"
-          },
-          "parameters": [
-            "\"setting_config\"",
-            "\"setting\"",
-            "",
-            "temp"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -682,70 +646,238 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "filesave",
-            "=",
-            "\"file di buat\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FileSystem::PathExists"
+              },
+              "parameters": [
+                "GlobalVariableString(etc.filename)+\".Setting_config.json\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FileSystem::SaveStringToFileSync"
+              },
+              "parameters": [
+                "GlobalVarToJSON(setting)",
+                "GlobalVariableString(etc.filename) + \".Setting_config.json\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetText"
+                  },
+                  "parameters": [
+                    "level",
+                    "=",
+                    "ToString(GlobalVariable(setting.LVL))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetText"
+                  },
+                  "parameters": [
+                    "URL",
+                    "=",
+                    "GlobalVariableString(setting.URL)"
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "TextInput::TextInputObject::SetText"
-          },
-          "parameters": [
-            "URL",
-            "=",
-            "GlobalVariableString(setting.URL)"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FileSystem::PathExists"
+              },
+              "parameters": [
+                "GlobalVariableString(etc.filename)+\".Setting_config.json\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FileSystem::LoadStringFromFileSync"
+              },
+              "parameters": [
+                "temp",
+                "GlobalVariableString(etc.filename)+\".Setting_config.json\"",
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONToGlobalVariableStructure"
+                  },
+                  "parameters": [
+                    "VariableString(temp)",
+                    "setting"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "level",
+                        "=",
+                        "ToString(GlobalVariable(setting.LVL))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "URL",
+                        "=",
+                        "GlobalVariableString(setting.URL)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "SoalSet",
+                        "=",
+                        "GlobalVariableString(setting.SoalSet)"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "TextInput::TextInputObject::SetText"
-          },
-          "parameters": [
-            "level",
-            "=",
-            "ToString(GlobalVariable(setting.LVL))"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"setting_config\"",
-            "\"setting\"",
-            "GlobalVariable(setting)"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "setting.accessibility",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+              },
+              "parameters": [
+                "settingAsse",
+                "",
+                ""
+              ]
+            }
           ]
         }
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Tombol",
+      "comment2": ""
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "conditions": [],
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
-          },
-          "parameters": [
-            "settingAsse",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
+              },
+              "parameters": [
+                "settingAsse",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "setting.accessibility",
+                ""
+              ]
+            }
           ]
-        }
-      ],
-      "actions": [
+        },
         {
-          "type": {
-            "value": "SetGlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "setting.accessibility",
-            "True"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
+              },
+              "parameters": [
+                "settingAsse",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "setting.accessibility",
+                "True"
+              ]
+            }
           ]
         }
       ]
@@ -786,22 +918,32 @@
         },
         {
           "type": {
+            "value": "ModVarGlobalTxt"
+          },
+          "parameters": [
+            "setting.SoalSet",
+            "=",
+            "SoalSet.Text()"
+          ]
+        },
+        {
+          "type": {
+            "value": "FileSystem::SaveStringToFileSync"
+          },
+          "parameters": [
+            "GlobalVarToJSON(setting)",
+            "GlobalVariableString(etc.filename) + \".Setting_config.json\"",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
             "",
             "\"Title Screen\"",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"setting_config\"",
-            "\"setting\"",
-            "GlobalVariable(setting)"
           ]
         }
       ]
@@ -819,18 +961,7 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "TextObject::String"
-          },
-          "parameters": [
-            "Ping",
-            "=",
-            "\"ping: \" + VariableString(pingstatus.status)"
-          ]
-        }
-      ],
+      "actions": [],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -838,6 +969,30 @@
             "includeConfig": 0
           },
           "target": "pingserver"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "2",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Ping",
+                    "=",
+                    "\"ping: \" + VariableString(pingstatus.status)"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },

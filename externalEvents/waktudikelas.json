@@ -8,30 +8,6 @@
       "conditions": [
         {
           "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"waktuKelas\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "RepeatEveryXSeconds::Repeat"
           },
           "parameters": [
@@ -60,7 +36,7 @@
           "parameters": [
             "setting.Time",
             "+",
-            "TimerElapsedTime(\"waktuKelas\")"
+            "1"
           ]
         }
       ]

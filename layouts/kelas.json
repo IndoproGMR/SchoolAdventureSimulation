@@ -9,26 +9,20 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.8141881203709941,
+    "snap": true,
+    "zoomFactor": 0.6455105703311512,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
-    {
-      "folded": true,
-      "name": "time",
-      "type": "string",
-      "value": ""
-    },
     {
       "folded": true,
       "name": "soaltemp",
@@ -44,6 +38,12 @@
     {
       "folded": true,
       "name": "soaljson",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "jawaban",
       "type": "string",
       "value": ""
     }
@@ -87,8 +87,8 @@
       "name": "BlueStripedBed",
       "persistentUuid": "50609f28-1fe0-4299-bb98-6e01d5c4878e",
       "width": 64,
-      "x": 78,
-      "y": 606,
+      "x": 31,
+      "y": 789,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,8 +102,8 @@
       "name": "BlueStripedBed",
       "persistentUuid": "dd5772b7-7b0c-4d4e-82cb-cf61b9020a68",
       "width": 86,
-      "x": 275,
-      "y": 596,
+      "x": 245,
+      "y": 780,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -117,8 +117,8 @@
       "name": "BlueStripedBed",
       "persistentUuid": "3d42d8e2-0cb0-42d4-a6c2-3cf629b875cc",
       "width": 170,
-      "x": 121,
-      "y": 721,
+      "x": 93,
+      "y": 881,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -132,8 +132,8 @@
       "name": "CollisionDetect",
       "persistentUuid": "4c4df1d8-df86-487d-9660-bd1dc071a3ff",
       "width": 67,
-      "x": 75,
-      "y": 607,
+      "x": 31,
+      "y": 787,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -147,8 +147,8 @@
       "name": "CollisionDetect",
       "persistentUuid": "69b94e92-959b-4848-bebb-369d9d2c0f47",
       "width": 90,
-      "x": 275,
-      "y": 597,
+      "x": 249,
+      "y": 777,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -162,8 +162,8 @@
       "name": "CollisionDetect",
       "persistentUuid": "045001ec-8c6b-4b83-8823-0a1e8d0b5858",
       "width": 176,
-      "x": 119,
-      "y": 720,
+      "x": 95,
+      "y": 876,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -172,7 +172,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 759,
+      "height": 884,
       "layer": "colloins",
       "name": "CollisionDetect",
       "persistentUuid": "36ce6606-1159-46b4-a7c7-b159d3c108dc",
@@ -222,8 +222,8 @@
       "name": "CollisionDetect",
       "persistentUuid": "97d47a0d-9204-4d28-807b-23ee76a18b64",
       "width": 1295,
-      "x": -2,
-      "y": 731,
+      "x": 0,
+      "y": 880,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -247,13 +247,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 18,
+      "height": 24,
       "layer": "colloins",
       "name": "keluarKelas",
       "persistentUuid": "4adc8e05-880f-41b6-9e2b-60e3aae5db35",
-      "width": 133,
-      "x": 143,
-      "y": 699,
+      "width": 153,
+      "x": 94,
+      "y": 857,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -267,8 +267,8 @@
       "name": "WoodenPlankFloorBoards",
       "persistentUuid": "a36babe1-b766-4bb4-8312-1924c6d54347",
       "width": 1701,
-      "x": -155,
-      "y": -120,
+      "x": -176,
+      "y": 61,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -291,14 +291,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 69,
       "layer": "ui",
       "name": "testSoal",
       "persistentUuid": "a242b208-1ead-43e3-9532-ce78180a4de8",
-      "width": 0,
-      "x": 476,
-      "y": 348,
+      "width": 240,
+      "x": 1024,
+      "y": 32,
       "zOrder": 1001,
       "numberProperties": [],
       "stringProperties": [],
@@ -312,8 +312,8 @@
       "name": "Transition",
       "persistentUuid": "3730f051-cecd-455b-870e-40d942ebb3fb",
       "width": 0,
-      "x": 1190,
-      "y": 523,
+      "x": 1344,
+      "y": 480,
       "zOrder": 1002,
       "numberProperties": [],
       "stringProperties": [],
@@ -322,14 +322,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 69,
-      "layer": "ui",
-      "name": "BlueButtonWithShadow",
-      "persistentUuid": "040e19e2-81d5-405f-9ef3-48f6c10d24f5",
-      "width": 235,
-      "x": 673,
-      "y": 475,
-      "zOrder": 1004,
+      "height": 96,
+      "layer": "Dialog",
+      "name": "Pertanyaan",
+      "persistentUuid": "753ee44c-5e67-4dc0-9e02-fe1b09e07f6c",
+      "width": 1184,
+      "x": 48,
+      "y": 304,
+      "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -338,13 +338,163 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "Dialog",
-      "name": "NewBitmapText",
-      "persistentUuid": "753ee44c-5e67-4dc0-9e02-fe1b09e07f6c",
+      "layer": "ui",
+      "name": "Jam",
+      "persistentUuid": "fbc74d48-e19d-43f7-b96a-ebf5ce50cde0",
       "width": 0,
-      "x": 576,
-      "y": 584,
-      "zOrder": 1005,
+      "x": 46,
+      "y": 61,
+      "zOrder": 1006,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "HP",
+      "name": "JamHP",
+      "persistentUuid": "b94adccb-df60-4233-bcd4-2726265b1204",
+      "width": 0,
+      "x": 1125,
+      "y": 488,
+      "zOrder": 1007,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 130,
+      "layer": "Dialog",
+      "name": "BoxPertanyaan",
+      "persistentUuid": "da7cacb5-d509-426f-b3d8-e91ad7678982",
+      "width": 1216,
+      "x": 32,
+      "y": 286,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 80,
+      "layer": "Dialog",
+      "name": "BoxJawaban",
+      "persistentUuid": "d3c2b98a-1b2c-4815-9e9b-9d2771a5b66a",
+      "width": 592,
+      "x": 656,
+      "y": 464,
+      "zOrder": 1008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "Dialog",
+      "name": "Jawaban1",
+      "persistentUuid": "8af62a0d-8f59-4b23-8b44-7dc6a98597a6",
+      "width": 560,
+      "x": 48,
+      "y": 480,
+      "zOrder": 1010,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "Dialog",
+      "name": "Jawaban2",
+      "persistentUuid": "4c0af843-dac4-4902-9613-df4a9635e72c",
+      "width": 560,
+      "x": 672,
+      "y": 480,
+      "zOrder": 1011,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 80,
+      "layer": "Dialog",
+      "name": "BoxJawaban",
+      "persistentUuid": "45ae52fd-286f-4f1b-a7ba-3e4af5614a23",
+      "width": 592,
+      "x": 32,
+      "y": 464,
+      "zOrder": 1008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 80,
+      "layer": "Dialog",
+      "name": "BoxJawaban",
+      "persistentUuid": "055878cc-eb65-40a0-bc16-fd6958e9f740",
+      "width": 592,
+      "x": 32,
+      "y": 576,
+      "zOrder": 1008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 80,
+      "layer": "Dialog",
+      "name": "BoxJawaban",
+      "persistentUuid": "ca59997f-09f2-4cf4-8a01-25aa5b61dda7",
+      "width": 592,
+      "x": 656,
+      "y": 576,
+      "zOrder": 1008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "Dialog",
+      "name": "Jawaban3",
+      "persistentUuid": "d96243d9-e0ea-4bf1-b0fd-bf44e71d3f22",
+      "width": 560,
+      "x": 48,
+      "y": 592,
+      "zOrder": 1012,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 48,
+      "layer": "Dialog",
+      "name": "Jawaban4",
+      "persistentUuid": "14d9850b-1c4d-4fd2-a159-d82412035d1e",
+      "width": 560,
+      "x": 672,
+      "y": 592,
+      "zOrder": 1013,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -881,72 +1031,8 @@
       "antialiasing": "none"
     },
     {
-      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
-      "name": "BlueButtonWithShadow",
-      "tags": "",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 3,
-        "BottomPadding": 32,
-        "TopPadding": 32,
-        "HoveredFadeOutDuration": 0.25
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 16,
-          "height": 69,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "Blue Button With Shadow_Hovered.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 16,
-          "height": 69,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "Blue Button With Shadow_Idle.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "Start typing",
-          "font": "CantoraOne-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 16,
-          "height": 69,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "Blue Button With Shadow_Pressed.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        }
-      }
-    },
-    {
       "assetStoreId": "",
-      "name": "NewBitmapText",
+      "name": "Pertanyaan",
       "tags": "",
       "type": "BitmapText::BitmapTextObject",
       "variables": [],
@@ -955,25 +1041,228 @@
         {
           "name": "BitmapText_AutoTyping",
           "type": "AutoTyping::BitmapText_AutoTyping",
-          "Interval": 0.05,
+          "Interval": 0.01,
           "CharacterJustAdded": false,
           "CurrentCharacter": ""
         }
       ],
       "content": {
-        "text": "This text use the default bitmap font.\nUse a custom Bitmap Font to create your own texts.",
+        "text": "Pertanyaan",
         "opacity": 255,
         "scale": 1,
         "fontSize": 20,
         "tint": "255;255;255",
-        "bitmapFontResourceName": "",
-        "textureAtlasResourceName": "",
+        "bitmapFontResourceName": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Jam",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "JamHP",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "BoxPertanyaan",
+      "rightMargin": 16,
+      "tags": "",
+      "texture": "assets/Border.png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "BoxJawaban",
+      "rightMargin": 16,
+      "tags": "",
+      "texture": "assets/Border.png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "Jawaban1",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping",
+          "Interval": 0.01,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "jawaban1",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Jawaban2",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping",
+          "Interval": 0.01,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "jawaban2",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Jawaban3",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping",
+          "Interval": 0.01,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "jawaban3",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Jawaban4",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping",
+          "Interval": 0.01,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "jawaban4",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets/8BitOperatorPlus8Regular_Edited.png",
         "align": "left",
         "wordWrap": true
       }
     }
   ],
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Start",
+      "comment2": ""
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -1012,15 +1301,6 @@
             ""
           ]
         }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "soalserver"
-        }
       ]
     },
     {
@@ -1028,7 +1308,7 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "WaktudiKelas"
+      "target": "timehendler"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -1042,14 +1322,34 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "Keluarkelas"
+      "target": "back"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
       },
-      "target": "back"
+      "target": "HP"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Keluarkelas"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Soal",
+      "comment2": ""
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1062,12 +1362,6 @@
             "testSoal",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
         }
       ],
       "actions": [],
@@ -1078,64 +1372,6 @@
             "includeConfig": 0
           },
           "target": "soalserver"
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "JSONToVariableStructure"
-          },
-          "parameters": [
-            "VariableString(soaltemp)",
-            "soaljson"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "BlueButtonWithShadow",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"Dialog\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AutoTyping::BitmapText_AutoTyping::StartAtBeginning"
-              },
-              "parameters": [
-                "NewBitmapText",
-                "BitmapText_AutoTyping",
-                ""
-              ]
-            }
-          ]
         }
       ]
     }
@@ -1164,6 +1400,17 @@
       "effects": []
     },
     {
+      "ambientLightColorB": 11136296,
+      "ambientLightColorG": 6069792,
+      "ambientLightColorR": 10954568,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "HP",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
       "ambientLightColorB": 10170480,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 10679144,
@@ -1181,7 +1428,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "name": "Dialog",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": []
     },
