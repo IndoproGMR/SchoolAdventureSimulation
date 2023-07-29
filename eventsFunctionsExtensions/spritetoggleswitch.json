@@ -308,8 +308,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Avoid a started touch to interfere with a state change from events.",
-              "comment2": ""
+              "comment": "Avoid a started touch to interfere with a state change from events."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -533,8 +532,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "The \"Validated\" state only last one frame.",
-                  "comment2": ""
+                  "comment": "The \"Validated\" state only last one frame."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -584,8 +582,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Make sure the cursor position is only checked once per frame.",
-                      "comment2": ""
+                      "comment": "Make sure the cursor position is only checked once per frame."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -649,8 +646,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter.",
-                      "comment2": ""
+                      "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -1703,8 +1699,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Create one background instance for of each state.",
-              "comment2": ""
+              "comment": "Create one background instance for of each state."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1734,8 +1729,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Pass the configuration to the behavior.\nThe PreviousIsChecked property allows to detect a change of \"intial value\" on hot reload.",
-              "comment2": ""
+              "comment": "Pass the configuration to the behavior.\nThe PreviousIsChecked property allows to detect a change of \"intial value\" on hot reload."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2671,6 +2665,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "State",
           "tags": "",

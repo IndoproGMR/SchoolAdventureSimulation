@@ -37,8 +37,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Collions List",
-      "comment2": ""
+      "comment": "Collions List"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -60,7 +59,37 @@
           },
           "parameters": [
             "Player",
-            "Tembok",
+            "tembok",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "tembokPinggir",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "Gerbang",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "tembokPagar",
             ""
           ]
         }

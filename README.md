@@ -1,6 +1,6 @@
 # SchoolAdventureSimulation
 ## Link Selalu Update
-[Game GitHub](https://github.com/IndoproGMR/SchoolAdventureSimulation)
+[Game GitHub](https://github.com/IndoproGMR/SchoolAdventureSimulation)\
 [Server Github](https://github.com/IndoproGMR/ServerBankSoal)
 
 ## Judul
@@ -14,27 +14,27 @@
 3. bisa menyambungkan ke internet
 
 ## Detail Game
-game quis
-game open world
-game simulasi
-HUD Player adalah sebuah hp
+game quis\
+game open world\
+game simulasi\
+HUD Player adalah sebuah hp\
 
-game berlangsung sama 30 hari
-perhari nya ada 8 jam
-1 jam nya 2 menit
-jadi ada 480 menit atau sekitar 8 jam game play sebelum UAS
-dalam 8 jam (16 menit) sekolah terdapat jam istirahat selama 2 jam (4 menit)
+game berlangsung sama 30 hari\
+perhari nya ada 8 jam\
+1 jam nya 2 menit\
+jadi ada 480 menit atau sekitar 8 jam game play sebelum UAS\
+dalam 8 jam (16 menit) sekolah terdapat jam istirahat selama 2 jam (4 menit)\
 
-setiap kelas bisa berlangsung salama 3 jam (6 menit irl) ~ 5 jam (10 menit irl)
-jam istirahat berlansung selama 2 jam (4 menit irl)
-
-
-semua soal diambil dari API
-orang2 bisa memberikan soal2 nya
+setiap kelas bisa berlangsung salama 3 jam (6 menit irl) ~ 5 jam (10 menit irl)\
+jam istirahat berlansung selama 2 jam (4 menit irl)\
 
 
-game horor (kalo selesai :v)
-mencari sebuah kertas tua yang berisi quis yang harus di isi
+semua soal diambil dari API\
+orang2 bisa memberikan soal2 nya\
+
+
+game horor (kalo selesai :v)\
+mencari sebuah kertas tua yang berisi quis yang harus di isi\
 
 
 assebility nya adalah txt to speack atau salah 1 mahasiswa akan membantu player/mendampingi player hingga ke dimensi lain yang dapat mendengarkan orang ini adalah hanya player sendiri dan pada layar player akan terlihat bahwa ada orang yang melihat dan mengikuti player dari jauh
@@ -52,18 +52,18 @@ player akan selalu memegang hp untuk berinteraksi dengan dunia
 - player bebas memilih kelas dan materi yang di sukai player tapi bila player hanya mengambil 1 mata pelajaran
 - maka di akhir semester dia akan gagal di karenakan tidak memiliki nilai score yang cukup untuk lulus
 - player di bantu dengan smartphone untuk membantu player untuk memantau score, jadwal kelas, map sekolah, dan lain2
-- setiap kelas memiliki jadwalnya masing2
-- bila player tidak masuk kelas(bolos) maka player dapat menemui beberapa orang yang akan mencoba untuk menghukum player (bully, guru, penjaga sekolah)
-- player dapat bersembunyi di ruangan (Ruangan Bersih2, UKS, Atap, kelas yang sedang tudak ada jadwal)
+- setiap kelas memiliki jadwalnya masing2 
+- bila player tidak masuk kelas(bolos) maka player dapat menemui beberapa orang yang akan mencoba untuk menghukum player (bully, guru, penjaga sekolah) (Extra fungsi)
+- player dapat bersembunyi di ruangan (Ruangan Bersih2, UKS, Atap, kelas yang sedang tudak ada jadwal) (Extra fungsi)
 
 - player bisa mengikuti pelajaran tepat/terlambat masuk kelas
-- bila player terlambat masuk kelas maka player dapat memilih untuk keluar kelas karena salah masuk kelas atau tetap masuk karena terlambat
+- bila player terlambat masuk kelas maka player dapat memilih untuk keluar kelas karena salah masuk kelas atau tetap masuk karena terlambat 
 - player tidak bersaing dengan diri sendiri malainkan bersaing dengan siswa lain nya (AI)
-- player akan bertemu dengan (AI) yang lebih pinta (Menjawab Pertanyaan lebih cepat dan tepat)
-- setiap guru memiliki rule sendiri (bila player atau AI terlalu banyak menjawab pertanyaan maka mereka akan di skip atau memiliki favorit siswa)
+- player akan bertemu dengan (AI) yang lebih pinta (Menjawab Pertanyaan lebih cepat dan tepat) 
+- setiap guru memiliki rule sendiri (bila player atau AI terlalu banyak menjawab pertanyaan maka mereka akan di skip atau memiliki favorit siswa) (Extra fungsi)
 
 - bila pada firts boot player tidak tersambung dengan internet maka gerbang sekolah akan tertutup karena sedang hujan lebat(karena tidak dapat berbicara dengan server) sekolah di liburkan tapi player tetap bisa masuk dengan mencari jalan tersembunyi dan menemui beberapa staff dan guru2 yang sedang ada di dalam sekolah
-- player dapat berbicara dengan guru atau staff
+- player dapat berbicara dengan guru atau staff (Extra fungsi)
 
 
 
@@ -108,10 +108,10 @@ pada SMP ini kita akan belajar selama 30 hari waktu yang cukup sebelum pendaftar
 
 
 ## Ref
-Kahoot
-yandre sim
-baldi (untuk game mysteri)
-Slenderman (untuk game mysteri)
+Kahoot\
+yandre sim\
+baldi (untuk game mysteri)\
+Slenderman (untuk game mysteri)\
 
 ## Detail
 #### game trivia
@@ -124,16 +124,19 @@ akan di hitung menggunakan fuzzy apakah lvl nya akan di naikan atau akan tetap a
 terdiri dari 3 ending + 1 bonus ending dari assebity
 
 ## TO DO
-- [ ] membuat kepribadian pada AI
-- [ ] cari cara supaya bisa melakukan TTS
-- [ ] assebility
-- [ ] Asset 2d top down
-- [ ] cari cara mendapatkan pixel art
-- [ ] musik dan ambient
-- [ ] texture pack Support
-- [ ] MOD Support
-- [ ] cari cara supaya bisa menampilkan gambar
-- [ ] cari cara supaya bisa melakukan Online Multiplayer
+- [ ] Merapihkan Map
+- [ ] membuat Map
+- [ ] Merapihkan Code (Extra fungsi)
+- [ ] assebility (Extra fungsi)
+- [ ] cari cara supaya bisa melakukan TTS (Extra fungsi)
+- [ ] musik dan ambient (Extra fungsi)
+- [ ] texture pack Support (Extra fungsi)
+- [ ] MOD Support (Extra fungsi)
+- [ ] cari cara supaya bisa menampilkan gambar (Extra fungsi)
+- [ ] cari cara supaya bisa melakukan Online Multiplayer (Extra fungsi)
+- [x] Asset 2d top down
+- [x] membuat kepribadian pada AI
+- [x] cari cara mendapatkan pixel art
 - [x] membuat file setting json
 - [x] membaca file json
 - [x] membuat database API
@@ -183,6 +186,7 @@ terdiri dari 3 ending + 1 bonus ending dari assebity
   ],
   "Kerajinan": "1", //semakin rendah kerajinan maka semakin lama menjawab nya (benar/salah) {1~100} dan kemungkinan siswa beradapada dikelas
   "Kepintaran": "1",//semakin rendah kepintaran maka makin kecil kemungkinan benar nya {1~100}
+  "ScoreSiswa": 0
 }
 ```
 
@@ -252,15 +256,15 @@ Jelaskan
 	- pada saat game berjalan pada offline cuaca akan berubah menjadi hujan
 
 
-```
+```js
 iterasicek = ++
 JS = jumlah siswa - iterasicek
-JN = jumlah nilai (dari yang tertinggi)
-NR = nilai rendah
-NT = nilai tinggi
-NG = JN/2
+JN = jumlah nilai (dari yang tertinggi) 20900
+NR = nilai rendah 1000
+NT = nilai tinggi 1500
+NG = JN/2         10450
 
-rataNilai = JS/JN
+rataNilai = JS/JN 
 
 // menurunkan lvl
 rataNilai <= NR

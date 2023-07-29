@@ -71,8 +71,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "TODO\n- bila tidak ada yang jawab selama min 20 detik tergantung pada lvl max 60 detik maka re run soal\n- bila jawaban benar naikan score\n- bila jawaban salah tunggu hingga ada yang benar atau waktu habis maka re run soal",
-      "comment2": ""
+      "comment": "TODO\n- bila tidak ada yang jawab selama min 20 detik tergantung pada lvl max 60 detik maka re run soal\n- bila jawaban benar naikan score\n- bila jawaban salah tunggu hingga ada yang benar atau waktu habis maka re run soal"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",

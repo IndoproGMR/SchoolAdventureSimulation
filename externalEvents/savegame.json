@@ -17,7 +17,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "setting.TimeH",
+                "etc.TimeH",
                 ">=",
                 "18"
               ]
@@ -27,7 +27,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "setting.TimeH",
+                "etc.TimeH",
                 "<=",
                 "5"
               ]
@@ -77,7 +77,7 @@
                         "value": "VarGlobal"
                       },
                       "parameters": [
-                        "setting.TimeH",
+                        "etc.TimeH",
                         ">=",
                         "21"
                       ]
@@ -87,7 +87,7 @@
                         "value": "VarGlobal"
                       },
                       "parameters": [
-                        "setting.TimeH",
+                        "etc.TimeH",
                         "<=",
                         "23"
                       ]
@@ -109,8 +109,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "resetTime",
-              "comment2": ""
+              "comment": "resetTime"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -121,7 +120,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "setting.TimeH",
+                    "etc.TimeH",
                     "=",
                     "6"
                   ]
@@ -131,7 +130,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "setting.TimeM",
+                    "etc.TimeM",
                     "=",
                     "0"
                   ]
@@ -141,7 +140,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "setting.TempTime",
+                    "etc.TimeS",
                     "=",
                     "0"
                   ]
@@ -151,7 +150,17 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "setting.TimeD",
+                    "etc.TimeTemp",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "etc.TimeD",
                     "+",
                     "1"
                   ]
@@ -163,7 +172,7 @@
                   "parameters": [
                     "Kelas.harike",
                     "=",
-                    "GlobalVariable(setting.TimeD)"
+                    "GlobalVariable(etc.TimeD)"
                   ]
                 }
               ],

@@ -820,8 +820,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "We don't know if the deceleration was already applied or not this step, but if the speed drifted from more than 1%, another extension is probably modifying the speed and it must not be overridden.",
-                  "comment2": ""
+                  "comment": "We don't know if the deceleration was already applied or not this step, but if the speed drifted from more than 1%, another extension is probably modifying the speed and it must not be overridden."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -858,8 +857,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Find how far to go to reach a pixel.",
-                      "comment2": ""
+                      "comment": "Find how far to go to reach a pixel."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -1003,8 +1001,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Move to the target as the movement behavior would do.",
-                      "comment2": ""
+                      "comment": "Move to the target as the movement behavior would do."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -1247,8 +1244,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Find how far to go to reach a pixel.",
-                      "comment2": ""
+                      "comment": "Find how far to go to reach a pixel."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -1428,8 +1424,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Move to the target as the movement behavior would do.",
-                      "comment2": ""
+                      "comment": "Move to the target as the movement behavior would do."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -1723,8 +1718,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Check if the character is decelerating.\nIt's done in doStepPostEvent because there is no way to know if the doStepPreEvents of this behavior is executed before or after the one of PlatformerCharcter.\nAs TimeDelta is used, we have to be sure the last PlatformerCharcter.doStepPreEvents call used the same TimeDelta. Which means this must be done after PlatformerCharcter.doStepPreEvents.",
-              "comment2": ""
+              "comment": "Check if the character is decelerating.\nIt's done in doStepPostEvent because there is no way to know if the doStepPreEvents of this behavior is executed before or after the one of PlatformerCharcter.\nAs TimeDelta is used, we have to be sure the last PlatformerCharcter.doStepPreEvents call used the same TimeDelta. Which means this must be done after PlatformerCharcter.doStepPreEvents."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1798,8 +1792,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Save the speed to detect speed changes from outside.",
-              "comment2": ""
+              "comment": "Save the speed to detect speed changes from outside."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",

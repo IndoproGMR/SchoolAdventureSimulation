@@ -9,300 +9,96 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.5468750000000066,
+    "snap": true,
+    "zoomFactor": 0.47893418845354185,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Sekolah",
+      "objects": [
+        {
+          "name": "PintuKelas"
+        },
+        {
+          "name": "Gerbang"
+        },
+        {
+          "name": "tembokPagar"
+        },
+        {
+          "name": "cobbleStone"
+        },
+        {
+          "name": "WoodenPlankFloorBoards"
+        }
+      ]
+    },
+    {
+      "name": "HP",
+      "objects": [
+        {
+          "name": "HpBG"
+        },
+        {
+          "name": "Save"
+        },
+        {
+          "name": "JamHP"
+        },
+        {
+          "name": "Button"
+        },
+        {
+          "name": "Map"
+        },
+        {
+          "name": "Score"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "folded": true,
       "name": "StatusHP",
-      "type": "number",
-      "value": 0
+      "type": "boolean",
+      "value": false
     },
     {
       "folded": true,
       "name": "rain_density",
       "type": "string",
       "value": "10"
+    },
+    {
+      "folded": true,
+      "name": "Variable",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
     {
       "angle": 0,
       "customSize": true,
-      "height": 2965,
+      "depth": 0,
+      "height": 3600,
       "layer": "",
-      "name": "NewTiledSprite",
+      "name": "Grass",
       "persistentUuid": "5e8a1e1d-522c-4847-b494-48998820b38c",
-      "width": 3888,
-      "x": -1150,
-      "y": -1141,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "a25ea508-ba16-464a-ade6-8f3d8fa1c2f1",
-      "width": 32,
-      "x": 331,
-      "y": 532,
-      "zOrder": 999,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "HotPinkBed",
-      "persistentUuid": "f0d59e4b-6588-4950-a3f6-825f95a8abf0",
-      "width": 32,
-      "x": 384,
-      "y": 576,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "HP",
-      "name": "BlueButtonWithShadow",
-      "persistentUuid": "69577c32-d646-49fa-a8da-722211df7f7b",
-      "width": 0,
-      "x": 1018,
-      "y": 597,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "HP",
-      "name": "NewText",
-      "persistentUuid": "d040437d-4a0a-4564-8173-42d6dc9fef14",
-      "width": 0,
-      "x": 1094,
-      "y": 481,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 22,
-      "layer": "colloins",
-      "name": "CollisionDetect",
-      "persistentUuid": "21e21f7d-593c-4ee8-b5d5-47df2f63a0e8",
-      "width": 22,
-      "x": 389,
-      "y": 576,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "MasukKelas",
-      "persistentUuid": "99b103d3-9577-4785-a8a8-58e89f50ee12",
-      "width": 0,
-      "x": 256,
-      "y": 576,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "MasukKelasIPA",
-      "persistentUuid": "4ed59e81-ca04-49f3-8595-3cc55fa3ed16",
-      "width": 0,
-      "x": 320,
-      "y": 608,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "NewText2",
-      "persistentUuid": "98cfe47f-a26d-422c-9867-64cbd0d44fc9",
-      "width": 32,
-      "x": 320,
-      "y": 608,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "MasukKelasIPS",
-      "persistentUuid": "668d924e-1c74-4443-9464-ed42172c0d5d",
-      "width": 0,
-      "x": 416,
-      "y": 608,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "NewText3",
-      "persistentUuid": "9403d384-3b20-4416-8a7d-1d5d6bfaced1",
-      "width": 32,
-      "x": 416,
-      "y": 608,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 736,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "f954f899-844a-439b-8b85-8f060701d9ec",
-      "width": 32,
-      "x": 1248,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 736,
-      "layer": "colloins",
-      "name": "CollisionDetect",
-      "persistentUuid": "884cf4ef-914f-4b00-8956-5ec2959fe137",
-      "width": 32,
-      "x": 1248,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "0c9ae548-4cb4-4e79-b846-515d64d7b997",
-      "width": 1216,
-      "x": 32,
-      "y": 704,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 736,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "ca3d5d1d-c418-43c8-9829-3d7ad4600902",
-      "width": 32,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "c614c64e-2593-4c6c-854e-91d4d449868a",
-      "width": 1216,
-      "x": 32,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 16,
-      "layer": "colloins",
-      "name": "CollisionDetect",
-      "persistentUuid": "c44c9fcd-89cf-410c-a0a7-e4b3d8db9ee1",
-      "width": 1248,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "ui",
-      "name": "TextWaktu",
-      "persistentUuid": "1a39aebc-5463-4df7-a713-34a1d82dbef3",
-      "width": 0,
-      "x": 57,
-      "y": 52,
-      "zOrder": 1000,
+      "width": 4640,
+      "x": -1024,
+      "y": -688,
+      "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -325,193 +121,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 256,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "2c57e7a7-40f3-4dba-8538-a4d7bc22cbf8",
-      "width": 32,
-      "x": 416,
-      "y": 64,
-      "zOrder": 1002,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "60606862-087d-4f61-8702-20abcc48225e",
-      "width": 544,
-      "x": 448,
-      "y": 288,
-      "zOrder": 1003,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "8b70ac34-6c43-42e7-b5c9-4dba68b9f730",
-      "width": 544,
-      "x": 448,
-      "y": 64,
-      "zOrder": 1003,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 256,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "3beed772-a4a7-4c66-bc3d-58ebee0585f9",
-      "width": 32,
-      "x": 992,
-      "y": 64,
-      "zOrder": 1002,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "1f94b05f-362a-49be-b7df-290f3f19aae7",
-      "width": 0,
-      "x": 512,
-      "y": 288,
-      "zOrder": 1004,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 128,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "3db47e5f-4999-4be7-94d8-cf2726ca2fdf",
-      "width": 32,
-      "x": 512,
-      "y": 160,
-      "zOrder": 1005,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 32,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "c8f61d7e-13f2-44cf-b969-3e204c6178ee",
-      "width": 128,
-      "x": 576,
-      "y": 128,
-      "zOrder": 1006,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 160,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "7e910ed1-db1e-42e3-a71b-27a2ec1dd21d",
-      "width": 32,
-      "x": 768,
-      "y": 96,
-      "zOrder": 1007,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "ba7d1f62-9906-48c6-969a-0697a8956b5a",
-      "width": 32,
-      "x": 864,
-      "y": 224,
-      "zOrder": 1008,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "layer": "",
-      "name": "Tembok",
-      "persistentUuid": "bfcdb1c9-e0d7-445e-a29c-ede58e4bfe45",
-      "width": 32,
-      "x": 864,
-      "y": 96,
-      "zOrder": 1009,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 14,
-      "layer": "",
-      "name": "NewTiledSprite2",
-      "persistentUuid": "04219f7e-5e19-4ea4-ad16-03ad87b4f0e0",
-      "width": 14,
-      "x": 471,
-      "y": 261,
-      "zOrder": 1010,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 12,
-      "layer": "",
-      "name": "NewTiledSprite22",
-      "persistentUuid": "213422b5-e9d8-45dc-ade8-5192af4ee059",
-      "width": 13,
-      "x": 954,
-      "y": 107,
-      "zOrder": 1011,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "depth": 0,
+      "height": 48,
       "layer": "ui",
       "name": "Jam",
       "persistentUuid": "a92b9354-4503-4e67-a2dd-0f41b8423922",
-      "width": 0,
-      "x": 60,
-      "y": 91,
+      "width": 144,
+      "x": 32,
+      "y": 32,
       "zOrder": 1012,
       "numberProperties": [],
       "stringProperties": [],
@@ -519,15 +136,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 48,
       "layer": "HP",
-      "name": "JamHP",
-      "persistentUuid": "1a328cca-f875-44a6-adbc-83feb402a5d3",
-      "width": 0,
-      "x": 1085,
-      "y": 449,
-      "zOrder": 1013,
+      "name": "Save",
+      "persistentUuid": "a6d20178-1b2b-44fd-83af-abf84f5c2329",
+      "width": 80,
+      "x": 1152,
+      "y": 544,
+      "zOrder": 1046,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -535,14 +153,907 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 50,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "6dc1d624-c4f4-4581-9b91-e8fe9dd852da",
+      "width": 32,
+      "x": 288,
+      "y": 320,
+      "zOrder": 1051,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "MasukKelasIPA",
+      "persistentUuid": "c0d772e5-b826-47af-b0a4-7182d1da7fd9",
+      "width": 0,
+      "x": 448,
+      "y": 160,
+      "zOrder": 1030,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "NewText2",
+      "persistentUuid": "f331d182-4f3d-4848-885f-fbe30ddec46f",
+      "width": 32,
+      "x": 416,
+      "y": 160,
+      "zOrder": 1040,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Gerbang",
+      "persistentUuid": "51843f92-1ab1-484f-8d24-4975c05bb144",
+      "width": 0,
+      "x": 208,
+      "y": 528,
+      "zOrder": 1028,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 304,
+      "layer": "",
+      "name": "cobbleStone",
+      "persistentUuid": "114bc351-f4af-48f2-a18f-5678998b2de4",
+      "width": 64,
+      "x": 208,
+      "y": 288,
+      "zOrder": 1020,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "245c2dba-ac82-4892-8e85-cde285b3be85",
+      "width": 1072,
+      "x": 272,
+      "y": 256,
+      "zOrder": 1037,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "0b033781-d57f-4279-a645-beef106ee055",
+      "width": 528,
+      "x": -320,
+      "y": 256,
+      "zOrder": 1038,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "46999ce4-2d3d-4725-9293-af67b0633f4d",
+      "width": 160,
+      "x": 288,
+      "y": 160,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PintuKelas",
+      "persistentUuid": "834b41ac-0df9-4b5d-84dd-ad1f636d3353",
+      "width": 0,
+      "x": 448,
+      "y": 160,
+      "zOrder": 1054,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "2e7866a5-7952-4e9f-96c9-cf873efc4d16",
+      "width": 112,
+      "x": 480,
+      "y": 160,
+      "zOrder": 1052,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 48,
+      "layer": "",
+      "name": "tembokPagar",
+      "persistentUuid": "007842e0-e701-496e-9d1f-29bfec013933",
+      "width": 1360,
+      "x": 272,
+      "y": 544,
+      "zOrder": 1033,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 48,
+      "layer": "",
+      "name": "tembokPagar",
+      "persistentUuid": "c77eaa35-3b3a-4172-8754-9ebf80d46b78",
+      "width": 1088,
+      "x": -880,
+      "y": 544,
+      "zOrder": 1033,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 16,
+      "layer": "",
+      "name": "jendelaKecil",
+      "persistentUuid": "b75bcdd3-961d-4679-a4bf-8e7911f17a16",
+      "width": 32,
+      "x": 496,
+      "y": 160,
+      "zOrder": 1053,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 832,
+      "layer": "",
+      "name": "WoodenPlankFloorBoards",
+      "persistentUuid": "f7be33df-d75c-4d5d-ac9f-963b02ccaf5d",
+      "width": 1904,
+      "x": -592,
+      "y": -544,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 640,
       "layer": "HP",
-      "name": "Save",
-      "persistentUuid": "a6d20178-1b2b-44fd-83af-abf84f5c2329",
-      "width": 85,
-      "x": 1125,
-      "y": 538,
-      "zOrder": 1014,
+      "name": "HpBG",
+      "persistentUuid": "49c80c8d-4f60-4d14-bc17-1e45e8573a0c",
+      "width": 256,
+      "x": 1008,
+      "y": 64,
+      "zOrder": 1044,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "HP",
+      "name": "JamHP",
+      "persistentUuid": "19a56513-9426-452c-a798-7a01fd7ae571",
+      "width": 112,
+      "x": 1024,
+      "y": 80,
+      "zOrder": 1048,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "HP",
+      "name": "Button",
+      "persistentUuid": "ec5eb084-4f3d-475a-aa77-c155f574fffd",
+      "width": 0,
+      "x": 1040,
+      "y": 619,
+      "zOrder": 1049,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "27b09c10-459e-4f10-8747-071528ebbc9a",
+      "width": 656,
+      "x": 688,
+      "y": 160,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "241cd3e2-3ff5-4bff-a7e6-700cb03b854f",
+      "width": 656,
+      "x": 688,
+      "y": 0,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "18bc0187-ead7-4160-a24d-61af0e184344",
+      "width": 224,
+      "x": 688,
+      "y": -96,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "136f96ba-ab29-430a-bcea-89691d5d363a",
+      "width": 336,
+      "x": 1008,
+      "y": -96,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 208,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "4e0afc0b-ea0d-4f77-bbf9-616a8135c8fa",
+      "width": 16,
+      "x": 912,
+      "y": -272,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 304,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "537134b6-a150-49f6-93ba-500cfca8512b",
+      "width": 16,
+      "x": 992,
+      "y": -368,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "766296f9-5168-43f9-ae38-dc7168988571",
+      "width": 16,
+      "x": 672,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 368,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "8344bcde-fff2-4f52-b9fa-2412389f6c31",
+      "width": 16,
+      "x": 672,
+      "y": -432,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 368,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "49a73ce2-3dc1-4800-8a2d-c90a4fc1a541",
+      "width": 16,
+      "x": 592,
+      "y": -432,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 480,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "46c47f95-259e-4af7-aa0f-a9a58c230deb",
+      "width": 16,
+      "x": 272,
+      "y": -544,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 480,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "8d5c940b-0f83-4242-9f95-0155f25a9c3b",
+      "width": 16,
+      "x": 192,
+      "y": -544,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 368,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "732e18e9-4694-4bcc-876f-2a4fb1d9e165",
+      "width": 16,
+      "x": -256,
+      "y": -432,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 464,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "443723da-1c7e-4e5c-97aa-38821b005b26",
+      "width": 16,
+      "x": -336,
+      "y": -528,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 208,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "95195f43-937a-48f4-a543-6cbd93d55853",
+      "width": 16,
+      "x": -256,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 288,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "def9d846-8352-409a-8180-27e8bc7d0448",
+      "width": 16,
+      "x": -336,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 208,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "9c8796d9-7cb6-4747-83cc-b8dd9bf21351",
+      "width": 16,
+      "x": -64,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 208,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "778a4b49-e5b5-4e9a-ae13-a911c9531983",
+      "width": 16,
+      "x": 16,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 208,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "2f56c062-dcf7-484a-8646-b16894931888",
+      "width": 16,
+      "x": 192,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "35e7473e-f9c9-4344-9521-9c90a5a55708",
+      "width": 16,
+      "x": 272,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "6e1ddde4-dcd6-4119-a237-870fe239f9c8",
+      "width": 16,
+      "x": 592,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 560,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "b201867d-0c3c-43f5-9ec9-db35b5436226",
+      "width": 16,
+      "x": 1344,
+      "y": -272,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "86b2e9e3-03b8-46ec-b3b9-b041a34f6f29",
+      "width": 304,
+      "x": 288,
+      "y": 0,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "985403c6-2ace-46c6-b378-8f7c109fd0ca",
+      "width": 304,
+      "x": 288,
+      "y": -96,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "e0c4f753-91ca-487f-a7d8-de108189e66e",
+      "width": 224,
+      "x": 688,
+      "y": -272,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "71040855-c7d6-42ee-811f-0b8bdf678e48",
+      "width": 336,
+      "x": 1008,
+      "y": -272,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "221d247f-138a-4bf0-ab12-985961b96a56",
+      "width": 160,
+      "x": 32,
+      "y": 0,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "fae62176-fe4f-41c8-af93-a987a5ec0482",
+      "width": 160,
+      "x": 32,
+      "y": 176,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "fefed0ac-8bba-4364-a776-89da877de072",
+      "width": 176,
+      "x": -240,
+      "y": 176,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "aebc7972-b4e4-4310-b078-9e85819bc24e",
+      "width": 224,
+      "x": -560,
+      "y": 0,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "74fe85da-38ff-4462-b354-06711b0bc924",
+      "width": 224,
+      "x": -560,
+      "y": -96,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 288,
+      "layer": "",
+      "name": "tembokPinggir",
+      "persistentUuid": "182160b2-ac52-441b-adbb-7f3b55c111c0",
+      "width": 16,
+      "x": -336,
+      "y": 0,
+      "zOrder": 1050,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "06cae194-2b02-4673-9080-2c16daeaa8a3",
+      "width": 176,
+      "x": -240,
+      "y": 0,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "41fca050-7426-4cbb-a21a-1f30383e78de",
+      "width": 432,
+      "x": -240,
+      "y": -96,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "2e2235a2-f128-4e39-a5a1-5a3396170ca3",
+      "width": 432,
+      "x": -240,
+      "y": -432,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "016bc265-686b-4f1f-9eb2-4e78dc2d811b",
+      "width": 432,
+      "x": -240,
+      "y": -432,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "5696021f-b4f3-47df-90dc-828578b9385a",
+      "width": 512,
+      "x": -320,
+      "y": -528,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "a7bf2763-1957-446f-a11f-010e2582043f",
+      "width": 304,
+      "x": 688,
+      "y": -368,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "",
+      "name": "tembok",
+      "persistentUuid": "92f7c721-be56-4fd4-967b-b655b43c8b8c",
+      "width": 304,
+      "x": 288,
+      "y": -368,
+      "zOrder": 1039,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 48,
+      "layer": "HP",
+      "name": "Map",
+      "persistentUuid": "a562a712-2281-4d6c-872f-56180c50ea0b",
+      "width": 80,
+      "x": 1040,
+      "y": 544,
+      "zOrder": 1055,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 32,
+      "layer": "HP",
+      "name": "Score",
+      "persistentUuid": "71c17645-5516-49d9-b427-6e75c14f941b",
+      "width": 112,
+      "x": 1024,
+      "y": 128,
+      "zOrder": 1056,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -552,9 +1063,9 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "NewTiledSprite",
+      "name": "Grass",
       "tags": "",
-      "texture": "New image",
+      "texture": "New image6",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -648,286 +1159,135 @@
       }
     },
     {
-      "assetStoreId": "562c0a0c9a3b573386ed314733217caa56cff90f7e602fe9cb4ae96553bad909",
-      "name": "Player",
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "Button",
       "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
-          "maxSpeed": 50,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "BUTTON",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
         }
-      ],
-      "animations": [
-        {
-          "name": "Down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.1667,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Down_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Down_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Down_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Left",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.1667,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Left_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Left_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Left_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Right",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.1667,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Right_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Right_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Right_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.1667,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Up_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Up_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Conjurer 1_Up_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      }
     },
     {
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "Map",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Map",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "0ae620883d9a9cc8f2831ef7d7ac4ae55d32bb42ab531fbeeaa9875c6713ea46",
       "name": "HotPinkBed",
       "tags": "",
@@ -1132,28 +1492,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "NewText4",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Text",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      }
-    },
-    {
-      "assetStoreId": "",
       "name": "Transition",
       "tags": "",
       "type": "PrimitiveDrawing::Drawer",
@@ -1188,25 +1526,7 @@
       "antialiasing": "none"
     },
     {
-      "assetStoreId": "",
-      "name": "NewTileMap",
-      "tags": "",
-      "type": "TileMap::TileMap",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "tilemapJsonFile": "",
-        "tilesetJsonFile": "",
-        "tilemapAtlasImage": "",
-        "displayMode": "visible",
-        "layerIndex": 0,
-        "levelIndex": 0,
-        "animationSpeedScale": 1,
-        "animationFps": 4
-      }
-    },
-    {
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "hujan",
       "tags": "",
@@ -1256,50 +1576,9 @@
     },
     {
       "assetStoreId": "",
-      "height": 32,
-      "name": "NewTiledSprite2",
-      "tags": "",
-      "texture": "New image5",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 1,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 50,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "NewTiledSprite22",
-      "tags": "",
-      "texture": "New image5",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Jam",
+      "name": "JamHP",
       "smoothed": true,
       "tags": "",
       "type": "TextObject::Text",
@@ -1307,7 +1586,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "Jam",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -1321,7 +1600,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "JamHP",
+      "name": "Score",
       "smoothed": true,
       "tags": "",
       "type": "TextObject::Text",
@@ -1329,7 +1608,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "Score",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -1402,6 +1681,54 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "cobbleStone",
+      "tags": "Sekolah",
+      "texture": "New image7",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "Gerbang",
+      "tags": "",
+      "texture": "Gerbang",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 48,
+      "name": "tembokPagar",
+      "tags": "",
+      "texture": "TembokPagar",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 640,
+      "name": "HpBG",
+      "tags": "",
+      "texture": "HpGB4",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 256,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "events": [
@@ -1415,8 +1742,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Start",
-      "comment2": ""
+      "comment": "Start"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1454,28 +1780,11 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "GlobalVariableAsBoolean"
-          },
-          "parameters": [
-            "etc.OnlineStatus",
-            "False"
-          ]
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "hujan"
-        }
-      ]
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "PlayerMovement"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -1485,11 +1794,67 @@
       "target": "timehendler"
     },
     {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "PlayerMovement"
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Online Status",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "etc.OnlineStatus",
+                "False"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "hujan"
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "etc.OnlineStatus",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Gerbang",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -1503,7 +1868,7 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "savegame"
+      "target": "HP"
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -1515,15 +1880,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "keypress",
-      "comment2": ""
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "HP"
+      "comment": "keypress"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -1533,166 +1890,166 @@
       "target": "backTitle"
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "MasukKelas",
-      "comment2": ""
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Distance"
-          },
-          "parameters": [
-            "Player",
-            "MasukKelas",
-            "20",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVarGlobalTxt"
-          },
-          "parameters": [
-            "Kelas.Pelajaran",
-            "=",
-            "\"custom\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Masukkelas"
-        }
-      ]
-    },
-    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "name": "MasukKelas",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "Distance"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "Player",
-            "MasukKelasIPA",
-            "20",
-            ""
+          "comment": "MasukKelas"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "MasukKelas",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Kelas.Pelajaran",
+                "=",
+                "\"custom\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Masukkelas"
+            }
           ]
         },
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVarGlobalTxt"
-          },
-          "parameters": [
-            "Kelas.Pelajaran",
-            "=",
-            "\"IPA\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Masukkelas"
-        }
-      ]
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Distance"
-          },
-          "parameters": [
-            "Player",
-            "MasukKelasIPS",
-            "20",
-            ""
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "MasukKelasIPA",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Kelas.Pelajaran",
+                "=",
+                "\"IPA\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Masukkelas"
+            }
           ]
         },
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "MasukKelasIPS",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Kelas.Pelajaran",
+                "=",
+                "\"IPS\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Masukkelas"
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVarGlobalTxt"
-          },
-          "parameters": [
-            "Kelas.Pelajaran",
-            "=",
-            "\"IPS\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Masukkelas"
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "PathfindingBehavior::SetDestination"
-          },
-          "parameters": [
-            "NewTiledSprite2",
-            "Pathfinding",
-            "",
-            "954",
-            "107"
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
@@ -1700,9 +2057,14 @@
       "ambientLightColorB": 0,
       "ambientLightColorG": 0,
       "ambientLightColorR": 0,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -1722,10 +2084,15 @@
       "ambientLightColorB": 9491248,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 9963752,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "HP",
-      "visibility": false,
+      "renderingType": "",
+      "visibility": true,
       "cameras": [],
       "effects": []
     },
@@ -1733,9 +2100,14 @@
       "ambientLightColorB": 8399856,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 10661592,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "ui",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -1744,9 +2116,14 @@
       "ambientLightColorB": 8223848,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 10479632,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "colloins",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -1755,9 +2132,14 @@
       "ambientLightColorB": 11279888,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 10661592,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "offlineLayer",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -1766,9 +2148,14 @@
       "ambientLightColorB": 150995058,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 10026816,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "Transition",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -1780,12 +2167,12 @@
       "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
-      "name": "Pathfinding",
-      "type": "PathfindingBehavior::PathfindingBehavior"
-    },
-    {
       "name": "PathfindingObstacle",
       "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
     },
     {
       "name": "TopDownMovement",

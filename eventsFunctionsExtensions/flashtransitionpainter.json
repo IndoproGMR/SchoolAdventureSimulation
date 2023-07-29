@@ -54,8 +54,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Disable effect when the game starts.",
-              "comment2": ""
+              "comment": "Disable effect when the game starts."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -115,8 +114,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Avoid default parameter of painter that could make the extension doesn't work.",
-              "comment2": ""
+              "comment": "Avoid default parameter of painter that could make the extension doesn't work."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -178,8 +176,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Initialise position of painter. \nIncrement or decrement \"_TimeProgressionEffect\" depending on direction.",
-              "comment2": ""
+              "comment": "Initialise position of painter. \nIncrement or decrement \"_TimeProgressionEffect\" depending on direction."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -229,8 +226,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Here this the paints functions of different effect depending on the type chosen by the user.\nDetect the direction of the animation and its end.",
-              "comment2": ""
+              "comment": "Here this the paints functions of different effect depending on the type chosen by the user.\nDetect the direction of the animation and its end."
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -242,8 +238,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Type 1 : flash effect. ",
-              "comment2": ""
+              "comment": "Type 1 : flash effect. "
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -419,8 +414,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Type 2 : screen come from top then return.",
-              "comment2": ""
+              "comment": "Type 2 : screen come from top then return."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -628,8 +622,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Type 3 : screen come from left then return.",
-              "comment2": ""
+              "comment": "Type 3 : screen come from left then return."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -837,8 +830,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Type 4 : a circle scale up from the middle then scale down.",
-              "comment2": ""
+              "comment": "Type 4 : a circle scale up from the middle then scale down."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1045,8 +1037,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "The repeat 5 times is used to have clean and smooth edges , especially for circle.\n",
-              "comment2": ""
+              "comment": "The repeat 5 times is used to have clean and smooth edges , especially for circle.\n"
             }
           ],
           "parameters": [
@@ -1081,8 +1072,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Reset variables.",
-              "comment2": ""
+              "comment": "Reset variables."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1157,8 +1147,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Initialise all variables and then activate the behavior.\nIf user doesn't assign value to color and type , we take the last value registred.\nIf user doesn't assign value to timer we take a default value (0.2).",
-              "comment2": ""
+              "comment": "Initialise all variables and then activate the behavior.\nIf user doesn't assign value to color and type , we take the last value registred.\nIf user doesn't assign value to timer we take a default value (0.2)."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1474,8 +1463,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Detect when the animation ends with a timer which is initialised in PaintEffect function.",
-              "comment2": ""
+              "comment": "Detect when the animation ends with a timer which is initialised in PaintEffect function."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",

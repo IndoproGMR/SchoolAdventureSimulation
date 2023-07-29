@@ -494,8 +494,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Start",
-      "comment2": ""
+      "comment": "Start"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -552,8 +551,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "tombol continue",
-              "comment2": ""
+              "comment": "tombol continue"
             },
             {
               "folded": true,
@@ -642,26 +640,22 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "read data siswa",
-              "comment2": ""
+              "comment": "read data siswa"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "conditions": [
                 {
                   "type": {
-                    "value": "FileSystem::LoadStringFromFileSync"
+                    "inverted": true,
+                    "value": "BuiltinCommonInstructions::Always"
                   },
                   "parameters": [
-                    "TempSiswa",
-                    "GlobalVariableString(etc.filename)+\"siswa\"+ FileSystem::PathDelimiter() + \"siswa.json\"",
-                    "",
                     ""
                   ]
                 }
               ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -669,11 +663,30 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "JSONToGlobalVariableStructure"
+                        "value": "FileSystem::LoadStringFromFileSync"
                       },
                       "parameters": [
-                        "VariableString(TempSiswa)",
-                        "siswa"
+                        "TempSiswa",
+                        "GlobalVariableString(etc.filename)+\"siswa\"+ FileSystem::PathDelimiter() + \"siswa.json\"",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "JSONToGlobalVariableStructure"
+                          },
+                          "parameters": [
+                            "VariableString(TempSiswa)",
+                            "siswa"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -859,8 +872,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Tombol",
-      "comment2": ""
+      "comment": "Tombol"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -989,6 +1001,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1042,6 +1055,74 @@
                     "Kelas"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "etc.TimeH",
+                        "=",
+                        "6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "etc.TimeD",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "etc.TimeM",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "etc.TimeS",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "etc.TimeTemp",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"game\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1054,9 +1135,14 @@
       "ambientLightColorB": 0,
       "ambientLightColorG": 8071752,
       "ambientLightColorR": 16,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -1076,13 +1162,27 @@
       "ambientLightColorB": 11234817,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 11230800,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "continue",
+      "renderingType": "",
       "visibility": false,
       "cameras": [],
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    }
+  ]
 }

@@ -5,7 +5,14 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -136,6 +143,16 @@
                         "Jawaban4",
                         "=",
                         "VariableString(jawaban[3])"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "jawabandipilih",
+                        "=",
+                        "\"none\""
                       ]
                     }
                   ]

@@ -13,8 +13,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "detik ke menit",
-      "comment2": ""
+      "comment": "detik ke menit"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -63,8 +62,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "menit ke jam",
-      "comment2": ""
+      "comment": "menit ke jam"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -113,8 +111,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "jam ke hari",
-      "comment2": ""
+      "comment": "jam ke hari"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",

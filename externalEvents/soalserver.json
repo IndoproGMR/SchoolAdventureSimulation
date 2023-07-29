@@ -13,10 +13,10 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Mata Pelajaran yang sudah di sediakan",
-      "comment2": ""
+      "comment": "Mata Pelajaran yang sudah di sediakan"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -39,7 +39,7 @@
           "parameters": [
             "urltemp",
             "=",
-            "GlobalVariableString(setting.URL)+\"/randomsoal?mapel=\" + GlobalVariableString(Kelas.Pelajaran) + \"&lvl=\" + GlobalVariableString(Kelas.lvl)"
+            "GlobalVariableString(setting.URL)+\"/randomsoal?mapel=\" + GlobalVariableString(Kelas.Pelajaran) + \"&lvl=\" + VariableString(lvlsoal)"
           ]
         }
       ],
@@ -79,6 +79,59 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahZ"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahC"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahV"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Dialog\""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Link",
                   "include": {
@@ -102,10 +155,10 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "soal set yang di berikan",
-      "comment2": ""
+      "comment": "soal set yang di berikan"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -127,7 +180,7 @@
           "parameters": [
             "urltemp",
             "=",
-            "GlobalVariableString(setting.URL)+\"/soalset?soalset=\" + GlobalVariableString(setting.SoalSet) + \"&lvl=\" + GlobalVariableString(Kelas.lvl)"
+            "GlobalVariableString(setting.URL)+\"/soalset?soalset=\" + GlobalVariableString(setting.SoalSet) + \"&lvl=\" + VariableString(lvlsoal)"
           ]
         }
       ],
@@ -168,6 +221,59 @@
               ],
               "events": [
                 {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Dialog\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahZ"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahC"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "pilihahV"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "type": "BuiltinCommonInstructions::Link",
                   "include": {
                     "includeConfig": 0
@@ -176,6 +282,35 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "runtimeScene.setBackgroundColor(100,100,240);",
+        "var variabler = runtimeScene.getVariables();",
+        "",
+        "var scorelvl  = variabler.get('lvlsoal').getAsNumber();",
+        "variabler.get('scoresoal').setNumber(scorelvl*1000);"
+      ],
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "lvlsoal",
+            "=",
+            "\"Level: \" + ToString(Variable(lvlsoal))"
           ]
         }
       ]

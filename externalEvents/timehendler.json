@@ -48,7 +48,7 @@
           "parameters": [
             "JamHP",
             "=",
-            "ToString(GlobalVariable(etc.TimeH))+\" : \"+ToString(GlobalVariable(etc.TimeM))"
+            "\"Jam \"+ToString(GlobalVariable(etc.TimeH))+\" : \"+ToString(GlobalVariable(etc.TimeM))"
           ]
         }
       ]

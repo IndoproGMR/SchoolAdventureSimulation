@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49508400737488867,
+    "zoomFactor": 0.39251611754882226,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -210,8 +210,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "SaveGame",
-          "comment2": ""
+          "comment": "SaveGame"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -287,9 +286,14 @@
       "ambientLightColorB": 4,
       "ambientLightColorG": 134217728,
       "ambientLightColorR": 1597263169,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -306,5 +310,14 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    }
+  ]
 }

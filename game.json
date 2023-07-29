@@ -8,6 +8,8 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.indoprogmr.SchoolAdventureSimulation",
@@ -17,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "School Adventure Simulation",
     "description": "",
     "author": "IndoproGMR",
@@ -27,7 +29,36 @@
     "maxFPS": 60,
     "minFPS": 30,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "New image8",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": "New image8"
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -511,11 +542,1751 @@
         "name": "assets/8BitOperatorPlus8Regular_Edited.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mejaKursi.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "mejaKursi",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mejaKursi2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "mejaKursi2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mejaKursi3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "mejaKursi3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tembok.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tembok",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PintuKelas.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "PintuKelas",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TembokPinggir.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "TembokPinggir",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/d7d38e961a1f665fc91cf80148aa7ad6ffa3618f669db1ce0e74daad0b9ce462_Conjurer 3_Down_1.png",
+          "name": "Conjurer 3_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/2e84656907581916129bb8c1d3a950e5258ea772659af7c6321479ba02d9723a_Conjurer 3_Down_2.png",
+          "name": "Conjurer 3_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/b87ca790c4bba33a9a9ce956b60aa20918a0935a698668160a06650286d8f2c0_Conjurer 3_Down_3.png",
+          "name": "Conjurer 3_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/9a4272430935aa9f00ba84cea9a9ba65c45ab66d67e641968ed022f7e65d45aa_Conjurer 3_Left_1.png",
+          "name": "Conjurer 3_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/8a407636312d7ea02f1847d270eb0e3e73199bad148e24387f78114efe5abfbb_Conjurer 3_Left_2.png",
+          "name": "Conjurer 3_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/75f0f1c23c8266b4316c38be5bb981235f43066711233795564fdc15c8c14f04_Conjurer 3_Left_3.png",
+          "name": "Conjurer 3_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/065cdfe7e7f7c2cb840da5a575193d66392e4a9d58e2fa6e1e064c6b6f11b715_Conjurer 3_Right_1.png",
+          "name": "Conjurer 3_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/d4c004d771afdf8770abf0c93180243054b3f7985a5ea8572a53a5ec00fadff6_Conjurer 3_Right_2.png",
+          "name": "Conjurer 3_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/6b2183697d1e0973b312320ab7cf34dfa5b361d2b713730d406e9fe8729a9da5_Conjurer 3_Right_3.png",
+          "name": "Conjurer 3_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/1728fbfdef60764ddb86ba3e4ed0be450d6fa3093f29da8c7fe9509db48d4f1b_Conjurer 3_Up_1.png",
+          "name": "Conjurer 3_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/60cb280cc7af353cf0c9b18661584731c9b4ab3c1a391dff68d166371e647d0f_Conjurer 3_Up_2.png",
+          "name": "Conjurer 3_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 3_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 3_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/12d22e132700141e2bb263ad2a495f6b8ef144b42214b503ea7cf6ea674934e5_Conjurer 3_Up_3.png",
+          "name": "Conjurer 3_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/2aed7f279e343d6c1c66b0f3c968e1355b42ebbee7e6a906be5326e33ac13f31_Conjurer 7_Down_1.png",
+          "name": "Conjurer 7_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/2f7dcf5215e9a906759a4a4f3433705718a7da5a26f52e65f1a85ab219eff4eb_Conjurer 7_Down_2.png",
+          "name": "Conjurer 7_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/810ad6aec9639d418e8f85d48e70bf70df713dd8c8a86c1566e766707a45a1e9_Conjurer 7_Down_3.png",
+          "name": "Conjurer 7_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/ade1af8266ac2d5e118170defd73f1176caf2e2de017725a2ef8568dd48383e2_Conjurer 7_Left_1.png",
+          "name": "Conjurer 7_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/5510eeedbe013118dd3b1d6fe6f86129e1ed830733c8ed66430be785592604f1_Conjurer 7_Left_2.png",
+          "name": "Conjurer 7_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/4e244b818abd6959143e7704d2245f6260c8a61c973150cacf4b9afbf5b6e5ca_Conjurer 7_Left_3.png",
+          "name": "Conjurer 7_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/17d8e5f0c5d06c1cd942b4105054081cbfc3754f78649b3f768a9c613a12766b_Conjurer 7_Right_1.png",
+          "name": "Conjurer 7_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/c5d550d0649ed00e662c864cbe30d300c0ff0c22ce9a25b4ac7d29c828244163_Conjurer 7_Right_2.png",
+          "name": "Conjurer 7_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/b6886c9689f5404803da286e625361f62a14b93ffc78fa910df3cd1471900aec_Conjurer 7_Right_3.png",
+          "name": "Conjurer 7_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/9e466be80a558d5b28ec4827c81b8caae0d5647a0b42416c554046d092e12fe5_Conjurer 7_Up_1.png",
+          "name": "Conjurer 7_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/36b8a96e06bd3bdc86fdad19384b68bf02e605d70cd8a28861526afe7c904914_Conjurer 7_Up_2.png",
+          "name": "Conjurer 7_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Conjurer 7_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Conjurer 7_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Conjurers/daacff4131879ffd429ca01955eb98c780caccb0598dc32349c785a65f84b46c_Conjurer 7_Up_3.png",
+          "name": "Conjurer 7_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/379d85fca5e36da2dddb2cc9e38fd3240fca510722bcff434746fac028743632_Bard 8_Down_1.png",
+          "name": "Bard 8_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/70ab13453b086ee5daf902102871f2848c88f6fa9d34a86025f4a9e0d538e05f_Bard 8_Down_2.png",
+          "name": "Bard 8_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/29f3fe2d170056ae943bffba6bfd1b9a7ea4cb516e80e2144e083b10a44d715c_Bard 8_Down_3.png",
+          "name": "Bard 8_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/9a925e8823736f5b660d117a647eeb0a88daa073937d5ec07f1f7cabbe9d15fd_Bard 8_Left_1.png",
+          "name": "Bard 8_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/66a94054acf368f64ca3a9f14340123361724839b77670fd1a9422ce1b94ddec_Bard 8_Left_2.png",
+          "name": "Bard 8_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/d0a5ff78e4d4980a84445bfa231bf3906be74da045df5e2ba005bc6d773e86e6_Bard 8_Left_3.png",
+          "name": "Bard 8_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/1847e515259d969aa0e629617a92ffb8287b421c3e4fdfa21e2f63ad5a7cbad1_Bard 8_Right_1.png",
+          "name": "Bard 8_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/c7d353633ab6ade815a4706264bb91bc0b02d70fbbae3d209abc19f2121724a3_Bard 8_Right_2.png",
+          "name": "Bard 8_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/d63e72ede052fdfe1cb3dfe9c080a7ac61827cd240976730116d5aa807fa1252_Bard 8_Right_3.png",
+          "name": "Bard 8_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/3fa1febd20ec96fdbada1da679e1096aded3a4b8f12a35cffd487b9bceb53551_Bard 8_Up_1.png",
+          "name": "Bard 8_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/e2dd1c6c229f1a39a55b250d156bc550da8d09e725c77b23759dfc152104e207_Bard 8_Up_2.png",
+          "name": "Bard 8_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bard 8_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bard 8_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Bards/16b93597b60beff683e230ff5f568aa21f85a8040f7f126e2698458542ec2b48_Bard 8_Up_3.png",
+          "name": "Bard 8_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/a32f8b549039cff5d8707e7b2140323e984829b7eb44a23860cb4bdc1036bbfd_Generic Character 5_Down_1.png",
+          "name": "Generic Character 5_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/bd30bc0492788f269635c81e8e831a55c27884661adb87182cb06d1317754ac9_Generic Character 5_Down_2.png",
+          "name": "Generic Character 5_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/9a1212693b97f9928d5d7df1a7d65f8973b1aa17e8f50153982bb7d08bcf18fe_Generic Character 5_Down_3.png",
+          "name": "Generic Character 5_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/a124e610c802f46f60d1a66dd3e933dad55c1ae96397ca7b60a463aa029dd760_Generic Character 5_Left_1.png",
+          "name": "Generic Character 5_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/7e229b36baf768fd5fc042c0df2be91ae1b19526e5e881109b37320220e3947a_Generic Character 5_Left_2.png",
+          "name": "Generic Character 5_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/d52ce5e7eb008c0918dd7b642151b36f4e3fcdc5047b12b3b2ebb89ca8999f94_Generic Character 5_Left_3.png",
+          "name": "Generic Character 5_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/b47af39342bcef8808a1a29a87278d867769ce2419f0fe471075cbda5c0a37c9_Generic Character 5_Right_1.png",
+          "name": "Generic Character 5_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/02d4837ed7288e058d71dc926b5769058a17e7da29675b2861f8a05bbf3365e1_Generic Character 5_Right_2.png",
+          "name": "Generic Character 5_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/6e0b376c109b24451de045717920bc30246f2cfb78142b35be128d2c123d8d78_Generic Character 5_Right_3.png",
+          "name": "Generic Character 5_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/2ebeadd7d1e597829837170b7e4a210df12033601f42e2a351b83e74ab381d12_Generic Character 5_Up_1.png",
+          "name": "Generic Character 5_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/454cca860c7e32dd75184504a7b3e878f1006696f022c40147c82f449e86e02e_Generic Character 5_Up_2.png",
+          "name": "Generic Character 5_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Generic Character 5_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Generic Character 5_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/89f2b471f420c7850ed67e81cb9aaa3ef5971f71a58f1bdc9c1602c52680702d_Generic Character 5_Up_3.png",
+          "name": "Generic Character 5_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/8dbcd973cf8c111fadc133988ded1f002ee479bf47007b8aecf9a30d7a60d8b1_Scout 3_Down_1.png",
+          "name": "Scout 3_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/cfe4dae7bbd96fa88557c57cd9e709debcc6830878e4cc81b724e4fe765009d8_Scout 3_Down_2.png",
+          "name": "Scout 3_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/60135dca0fc4610cd6fd6aa8675d67ad49dee836c27134d0cc0b09c193f4c14a_Scout 3_Down_3.png",
+          "name": "Scout 3_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/8f693027cbd55da06720068317875cc3c619b6c0e1623de857a247be73340d4b_Scout 3_Left_1.png",
+          "name": "Scout 3_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/1333a639262c93ad43f810c25f6f904fe5bd6e3c17e17c47ca83150a2967b8cd_Scout 3_Left_2.png",
+          "name": "Scout 3_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/8e48f5b22a4079b024f591a2f86902911ffa5d5aa6364c04943db6fbfaadb381_Scout 3_Left_3.png",
+          "name": "Scout 3_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/e6618fe8c3b9be578428aa8969f40dc28fa90233ad67a04eaaf029d9bb88ae89_Scout 3_Right_1.png",
+          "name": "Scout 3_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/270b412042037e113b0d9f640f56f48b1b901da7cca0dfc66cfa4eb5e1151066_Scout 3_Right_2.png",
+          "name": "Scout 3_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/aadc4e010d46f2f047ea470b3f110ae4907babf1e7957daa3721be4964f2f510_Scout 3_Right_3.png",
+          "name": "Scout 3_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/b77ec81a5db43f33ee4dd6085bac6454affdf101e646049fa9a32dca377c2388_Scout 3_Up_1.png",
+          "name": "Scout 3_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/0ac1b75970eeeb1ea44bf6ddd4f6e52f47f9b15b89ad3da5b0441503ada0c75a_Scout 3_Up_2.png",
+          "name": "Scout 3_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Scout 3_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scout 3_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Scouts/9c3ee809c6a61ebf1b3f2ba3471e23705bafccdfade5ec5db945544543d7e752_Scout 3_Up_3.png",
+          "name": "Scout 3_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/f72133de127fef0cc0c60d4f99a6416d7aa4e939e565edd44c700b565726b0e5_Alchemist_Idle Down_1.png",
+          "name": "Alchemist_Idle Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/f72133de127fef0cc0c60d4f99a6416d7aa4e939e565edd44c700b565726b0e5_Alchemist_Idle Down_2.png",
+          "name": "Alchemist_Idle Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/203244192ed0abdebfa13e5d8dc1982c5a80edd004a2d119dc93a584dd54e77a_Alchemist_Idle Down_3.png",
+          "name": "Alchemist_Idle Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Down_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Down_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/203244192ed0abdebfa13e5d8dc1982c5a80edd004a2d119dc93a584dd54e77a_Alchemist_Idle Down_4.png",
+          "name": "Alchemist_Idle Down_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/d277d6d7cd58827bff3ec2019afee460a4e5994765a56073f256d1f7bf5bb3c0_Alchemist_Idle Left_1.png",
+          "name": "Alchemist_Idle Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/d277d6d7cd58827bff3ec2019afee460a4e5994765a56073f256d1f7bf5bb3c0_Alchemist_Idle Left_2.png",
+          "name": "Alchemist_Idle Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/259c8457409dc1d456b90866b9d8f1214c2e4ab59854ca63b9c5ec157d93df08_Alchemist_Idle Left_3.png",
+          "name": "Alchemist_Idle Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Left_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Left_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/259c8457409dc1d456b90866b9d8f1214c2e4ab59854ca63b9c5ec157d93df08_Alchemist_Idle Left_4.png",
+          "name": "Alchemist_Idle Left_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/5e302770fbb0bb1a357a8074afa02c932bb0f6b9370cfe14e845baa534c2b438_Alchemist_Idle Right_1.png",
+          "name": "Alchemist_Idle Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/5e302770fbb0bb1a357a8074afa02c932bb0f6b9370cfe14e845baa534c2b438_Alchemist_Idle Right_2.png",
+          "name": "Alchemist_Idle Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/791f0f75c7221bafca4380c207fff71e46d47d3ff2c5b933c6f82a92430a4bf7_Alchemist_Idle Right_3.png",
+          "name": "Alchemist_Idle Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Right_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Right_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/791f0f75c7221bafca4380c207fff71e46d47d3ff2c5b933c6f82a92430a4bf7_Alchemist_Idle Right_4.png",
+          "name": "Alchemist_Idle Right_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/10358357199a622caf4412cec574345afa71b88be808438f980f8a95727cda8d_Alchemist_Idle Up_1.png",
+          "name": "Alchemist_Idle Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/10358357199a622caf4412cec574345afa71b88be808438f980f8a95727cda8d_Alchemist_Idle Up_2.png",
+          "name": "Alchemist_Idle Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/807ad95f294ad480f3b16b12091c480e79d9b1c9ac599cee358cca9649cea20f_Alchemist_Idle Up_3.png",
+          "name": "Alchemist_Idle Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Idle Up_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Idle Up_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/807ad95f294ad480f3b16b12091c480e79d9b1c9ac599cee358cca9649cea20f_Alchemist_Idle Up_4.png",
+          "name": "Alchemist_Idle Up_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/ef7ac736cc2b4eb61caea6f6cca64765df5a16a3a6635901d23cdbca53d61137_Alchemist_Walk Down_1.png",
+          "name": "Alchemist_Walk Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/48f92cb2e93145e534e15364d0b95083d47b8b5b55caced98547dbb3f5cb36d8_Alchemist_Walk Down_2.png",
+          "name": "Alchemist_Walk Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/6c409c5bb059e6b2ff7bd42e9157126e98ca9eacb3bcaa4e4fd6ec30f3c602fb_Alchemist_Walk Down_3.png",
+          "name": "Alchemist_Walk Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Down_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Down_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/48f92cb2e93145e534e15364d0b95083d47b8b5b55caced98547dbb3f5cb36d8_Alchemist_Walk Down_4.png",
+          "name": "Alchemist_Walk Down_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/edc664bebba3fd483ed98965d7e42bcbed0e978a59251057ca9724686a800ef3_Alchemist_Walk Left_1.png",
+          "name": "Alchemist_Walk Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/39b337fb8edf3ca57699074e17ebdf93e7f3d1d6e67847353bed1fe96172df50_Alchemist_Walk Left_2.png",
+          "name": "Alchemist_Walk Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/99be81b612bdb5586749eef78e3b253cc4a6e564efad0132173f869d35a8776c_Alchemist_Walk Left_3.png",
+          "name": "Alchemist_Walk Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Left_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Left_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/39b337fb8edf3ca57699074e17ebdf93e7f3d1d6e67847353bed1fe96172df50_Alchemist_Walk Left_4.png",
+          "name": "Alchemist_Walk Left_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/f0a9443ea7ec6765a165b0a471c8a14a1c4a96882cc72575f6fcecce5347ca3e_Alchemist_Walk Right_1.png",
+          "name": "Alchemist_Walk Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/379c5c41ca4646f2611c640061a832887730205848868d34692abc9be8acb333_Alchemist_Walk Right_2.png",
+          "name": "Alchemist_Walk Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/3789a0d0867e119b34836c0baa7acd4f9d987fd319d9c8b04a9999ec4cbc7362_Alchemist_Walk Right_3.png",
+          "name": "Alchemist_Walk Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Right_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Right_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/379c5c41ca4646f2611c640061a832887730205848868d34692abc9be8acb333_Alchemist_Walk Right_4.png",
+          "name": "Alchemist_Walk Right_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/36d4a390b359cdd88e259f4bd61374dc8616ea4f20ddc7bef6be26a5073d931e_Alchemist_Walk Up_1.png",
+          "name": "Alchemist_Walk Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/daa64a6c8ead81ca002fb6e07b28a6dbb6669fdc5e9de4643329b0203b683e97_Alchemist_Walk Up_2.png",
+          "name": "Alchemist_Walk Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/f112a2a44765ff302fba75268d9e3bdf2b3472832a148232c343ccde3d99e8fa_Alchemist_Walk Up_3.png",
+          "name": "Alchemist_Walk Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Alchemist_Walk Up_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alchemist_Walk Up_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/daa64a6c8ead81ca002fb6e07b28a6dbb6669fdc5e9de4643329b0203b683e97_Alchemist_Walk Up_4.png",
+          "name": "Alchemist_Walk Up_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gerbang.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Gerbang",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TembokPagar.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "TembokPagar",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/JendelaKecil.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "JendelaKecil",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/JendelaKecil2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/JendelaKecil2.png\"}",
+        "name": "JendelaKecil2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpGB.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/HpGB.png\"}",
+        "name": "HpGB",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpGB2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "HpGB2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpGB3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "HpGB3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpGB4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "HpGB4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tembok2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Tembok2.png\"}",
+        "name": "Tembok2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/JendelaKecil3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "JendelaKecil3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "562c0a0c9a3b573386ed314733217caa56cff90f7e602fe9cb4ae96553bad909",
+      "name": "Player",
+      "tags": "Sekolah",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 50,
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "rotateObject": false,
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Down_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Down_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Down_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Left_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Left_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Left_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Right_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Right_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Right_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Up_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Up_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Conjurer 1_Up_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Jam",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "tembok",
+      "tags": "Sekolah",
+      "texture": "Tembok2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "PintuKelas",
+      "tags": "Sekolah",
+      "texture": "PintuKelas",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 16,
+      "name": "tembokPinggir",
+      "tags": "Sekolah",
+      "texture": "TembokPinggir",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "3c0530f27978682f54ee02da32e138efae73c3cd2a67e9eebce24f5059e9dcc4",
+      "height": 128,
+      "name": "WoodenPlankFloorBoards",
+      "tags": "",
+      "texture": "tiled_Wooden Plank Floor Boards.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 16,
+      "name": "jendelaKecil",
+      "tags": "",
+      "texture": "JendelaKecil3",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
   "objectsGroups": [],
   "variables": [
     {
@@ -676,6 +2447,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/savegamescreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/map"
     }
   ],
   "externalEvents": [
@@ -694,10 +2469,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/backtitle"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/algonaiklvl"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -758,9 +2529,25 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/soalhendler"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/soalcek"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/ai"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/memilihjawaban"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/arraytools"

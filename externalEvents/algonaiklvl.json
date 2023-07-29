@@ -16,7 +16,7 @@
         "var NR = variables.get(\"NR\").getAsString(); // nilai terenda",
         "var NT = variables.get(\"NT\").getAsString(); // nilai tertinggi",
         "                                            // nilai rata2",
-        "var rataNilai = JN/JN;                      ",
+        "var rataNilai = JN/JS;                      ",
         "var nilai = 0;",
         "var status=\"===\";",
         "",
@@ -57,7 +57,7 @@
         "    return nilai;",
         "}",
         "",
-        "variables.get(\"test\").setString($nilai);"
+        "variables.get(\"test\").setString(nilai);"
       ],
       "parameterObjects": "",
       "useStrict": true,

@@ -467,6 +467,7 @@
       },
       "childrenContent": {
         "State": {
+          "adaptCollisionMaskAutomatically": false,
           "updateIfNotVisible": false,
           "animations": [
             {
@@ -631,8 +632,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "cek file",
-      "comment2": ""
+      "comment": "cek file"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -821,8 +821,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Tombol",
-      "comment2": ""
+      "comment": "Tombol"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1009,9 +1008,14 @@
       "ambientLightColorB": 7375232,
       "ambientLightColorG": 7375232,
       "ambientLightColorR": 0,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -1028,5 +1032,14 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    }
+  ]
 }
